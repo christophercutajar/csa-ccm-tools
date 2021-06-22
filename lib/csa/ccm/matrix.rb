@@ -27,7 +27,7 @@ class Matrix
     @control_domains ||= {}
     @answers ||= AnswerCollection.new
 
-    parse_version if @workbook
+    parse_version if @workbook 
 
     self
   end
@@ -40,7 +40,9 @@ class Matrix
     title_prefix = 'consensus assessments initiative questionnaire v'
     first_row = workbook[0][0]
 
-    if first_row[2].value.downcase.start_with? title_prefix # version v3.0.1
+    if first_row[4].value.downcase.start_with? title_prefix # version v3.1.0
+      @version = first_row[4].value.downcase[title_prefix.length..-1]
+    elsif first_row[2].value.downcase.start_with? title_prefix # version v3.0.1
       @version = first_row[2].value.downcase[title_prefix.length..-1]
     elsif first_row[0].value.downcase.start_with? title_prefix # version v1.1
       @version = first_row[0].value.downcase[title_prefix.length..-1]
@@ -56,12 +58,13 @@ class Matrix
   attr_reader :workbook
 
   def title
-    worksheet[0][2].value
+    worksheet[0][4].value # version v3.1.0
   end
 
   def metadata
     {
       'version' => version,
+      # 'version' => '3.0.1',
       'title' => title,
       'source-file' => source_file
     }
@@ -203,12 +206,15 @@ class Matrix
                elsif row.answer_yes
                  'yes'
                end
-
+      
       matrix.answers << Answer.new(
         question_id: row.question_id,
         control_id: control_id,
         answer: answer,
-        comment: row.comment
+        comment: row.comment,
+        infosec_function: row.infosec_function,
+        infosec_service: row.infosec_service,
+        infosec_last_review_date: (row.infosec_last_review_date).to_s
       )
     end
 
@@ -235,6 +241,9 @@ class Matrix
   end
 
   def to_xlsx(filename)
+    worksheet.delete_column(11)
+    worksheet.delete_column(10)
+    worksheet.delete_column(9)
     workbook.write(filename)
   end
 

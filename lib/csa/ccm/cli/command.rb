@@ -52,7 +52,7 @@ module Csa
         desc "caiq2yaml XLSX_PATH", "Converting a filled CAIQ to YAML"
         option :output_name, aliases: :n, type: :string, desc: "Optional output CAIQ YAML file. If missed, the input file’s name will be used"
         option :output_path, aliases: :p, type: :string, desc: "Optional output directory for result file. If missed, pwd will be used"
-        option :skip_comment, aliases: :s, type: :boolean, desc: "[true|false] Optional skip comments in result file. if missed, comments are retained"
+        option :comment, aliases: :s, type: :boolean, desc: "[true|false] Optional skip comments in result file. if missed, comments are retained"
 
         def caiq2yaml(input_xlsx_file)
           unless input_xlsx_file
@@ -78,17 +78,19 @@ module Csa
 
         desc "generate-with-answers ANSWERS_YAML", "Writing to the CAIQ XSLX template using YAML"
         option :template_path, aliases: :t, type: :string, desc: "Optional input template CAIQ XSLT file. If missed -r will be checked"
-        option :caiq_version, aliases: :r, type: :string, default: "3.0.1", desc: "Optional input template CAIQ XSLT version. If missed -t will be checked"
+        option :caiq_version, aliases: :r, type: :string, default: "3.1", desc: "Optional input template CAIQ XSLT version. If missed -t will be checked"
         option :output_file, aliases: :o, type: :string, desc: 'Optional output XSLT file. If missed, the input file’s name will be used'
 
         def generate_with_answers(answers_yaml_path)
           unless File.exist? answers_yaml_path
             UI.say("#{answers_yaml_path} file doesn't exists")
+            puts "#{answers_yaml_path} file doesn't exists"
             return
           end
 
           unless options[:template_path] || options[:caiq_version]
             UI.say("No input template specified by -r or -t")
+            # puts "No input template specified by -r or -t"
             return
           end
 
@@ -99,6 +101,7 @@ module Csa
 
             unless input_files && !input_files.empty?
               UI.say("No file found for #{caiq_version} version")
+              # puts "No file found for #{caiq_version} version"
               return
             end
 
@@ -112,6 +115,7 @@ module Csa
               date_b <=> date_a
             end
 
+            puts input_files
             template_xlsx_path = input_files.first
           end
 
@@ -126,7 +130,9 @@ module Csa
           end
 
           answers = AnswerCollection.from_yaml(answers_yaml_path)
+          # puts answers.values
           matrix = Matrix.from_xlsx(template_xlsx_path)
+          # puts matrix
 
           matrix.apply_answers(answers)
           matrix.to_xlsx(output_file)

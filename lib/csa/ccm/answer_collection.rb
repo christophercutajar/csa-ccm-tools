@@ -43,20 +43,20 @@ class AnswerCollection
     @answers[question_id]
   end
 
-  def to_hash(skip_comment = true)
+  def to_hash(skip_elastic_metadata = true)
     {
       'ccm' => {
         'metadata' => @metadata.to_hash,
-        'answers' => @answers.values.sort.map { |a| a.to_hash(skip_comment) }
+        'answers' => @answers.values.sort.map { |a| a.to_hash(skip_elastic_metadata) }
       }
     }
   end
 
-  def to_yaml(skip_comment = true)
-    to_hash(skip_comment).to_yaml
+  def to_yaml(skip_elastic_metadata = false)
+    to_hash(skip_elastic_metadata).to_yaml
   end
 
-  def to_file(filename, skip_comment = true)
+  def to_file(filename, skip_elastic_metadata = false)
     File.open(filename, 'w') do |file|
       file.write(to_yaml)
     end

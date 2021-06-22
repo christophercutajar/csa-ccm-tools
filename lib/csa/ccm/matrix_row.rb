@@ -5,7 +5,7 @@ module Csa::Ccm
     ATTRIBS = %i[
       control_domain_id control_id question_id control_spec
       question_content answer_yes answer_no answer_na comment
-      control_domain_description
+      control_domain_description infosec_function infosec_service infosec_last_review_date
     ].freeze
 
     attr_accessor *ATTRIBS
@@ -20,11 +20,14 @@ module Csa::Ccm
       @answer_no = ruby_xl_row[6].value
       @answer_na = ruby_xl_row[7].value
       @comment = ruby_xl_row[8].value
+      @infosec_function = ruby_xl_row[9].value
+      @infosec_service = ruby_xl_row[10].value
+      @infosec_last_review_date = ruby_xl_row[11].value
 
-      # In 3.0.1 2017-09-01, question_id for "AIS-02.2" is listed as "AIS- 02.2"
+      # In 3.0.1 2017-09-01, question_id for "AIS-02.2" is listed as "AIS- 02.2" - This still applies for v3.1
       %w[control_id question_id].each do |field|
         if val = send(field)
-          send("#{field}=", val.gsub(/\s/, ''))
+          send("#{field}=", val.to_s.gsub(/\s/, ''))
         end
       end
 
@@ -40,6 +43,9 @@ module Csa::Ccm
       # puts control_domain_description
       # puts control_id
       # puts question_id
+      # puts "New Answer \n"
+      # puts comment
+      # puts service
 
       self
     end

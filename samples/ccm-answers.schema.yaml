@@ -17,5 +17,8 @@ required:
             answer: "//str"
             comment: "//str"
             control-id: "//str"
+            infosec_function: "//str"
+            infosec_service: "//str"
+            infosec_last_reviewed_date: "//str"
           required:
             question-id: "//str"

@@ -7,6 +7,9 @@ class Answer
     question_id
     answer
     comment
+    infosec_function
+    infosec_service
+    infosec_last_review_date
   )
 
   attr_accessor *ATTRIBS
@@ -23,8 +26,14 @@ class Answer
     question_id <=> other.question_id
   end
 
-  def to_hash(skip_comment = true)
-    attribs = skip_comment ? ATTRIBS - [:comment] : ATTRIBS
+  def to_hash(skip_elastic_metadata)
+    # attribs = skip_comment ? ATTRIBS - [:comment] : ATTRIBS  #always want comment to be outputted
+    # attribs = ATTRIBS
+    if skip_elastic_metadata
+      attribs = ATTRIBS - [:infosec_function] - [:infosec_service] - [:infosec_last_review_date]
+    else
+      attribs = ATTRIBS
+    end
 
     attribs.inject({}) do |acc, attrib|
       value = send(attrib)
