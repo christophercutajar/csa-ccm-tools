@@ -156,3 +156,9 @@ Where,
 == Credits
 
 This program is created and maintained by Ribose.
+
+== Elastic Documenation
+
+clone customer-security-questionnaire repo
+Execute `bundle` to install everything
+Execute `bundle exec csa-ccm caiq2yaml official-csa-caiq-elastic-cloud.xlsx` to convert from XLSX to YAML
