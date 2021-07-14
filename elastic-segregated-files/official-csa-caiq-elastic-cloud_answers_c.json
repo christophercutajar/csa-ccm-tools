@@ -1,0 +1,128 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "CCC-01",
+        "question-id": "CCC-01.1",
+        "answer": "yes",
+        "comment": "A formal systems development life cycle (SDLC) methodology is in place. This is the overall process of developing, implementing, and retiring information systems through a multistep process from initiation, analysis, design, implementation, and maintenance to disposal. The process consists of a series of defined steps or phases where information security must be integrated into the SDLC to ensure appropriate protection for the Elastic information that the system transmits, processes, and stores.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-02",
+        "question-id": "CCC-02.1",
+        "answer": "yes",
+        "comment": "Our SDLC process is built around our unique open source development model. \n\nAll engineers and developers receive annual training to ensure they are aware of common security problems, how to identify and resolve them, as well as how to report such problems to the appropriate teams for remiation and verification.\n\nChanges are vetted by multiple security aware reviewers. We have programs in place to understand third party components, track known issues in them as well as updating the components as needed. Releases receive scrutiny to identify any issues in the supply chain and product itself. \n\nWe are a CVE CNA and publish security alerts as part of the overall lifecycle program.\n\nWe regularly conduct 3rd party code reviews of our products, run a bug bounty program, and accept external reports from anyone regarding the security of our software.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-02",
+        "question-id": "CCC-02.2",
+        "answer": "yes",
+        "comment": "All source code is managed through the same process and subject to the SDLC controls described in this document.\n\nSource code that is contributed by open source contributors can only be merged into the codebase by Elastic employees.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-03",
+        "question-id": "CCC-03.1",
+        "answer": "yes",
+        "comment": "Deployment to production is controlled via Change Management.\n\n- Changes are branches in repository, version controlled.\n- All changes are automatically tested by a pipeline of tools including security checks.\n- All testing is registered in GitHub and must pass before testing is complete.\n- To merge new code into production, needs approval by another developer/engineer",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-03",
+        "question-id": "CCC-03.2",
+        "answer": "yes",
+        "comment": "Elastic source code and issue tracking is available and open for review by community and customers alike. It's available at github.com/elastic. \n\nWe are a CVE CNA and publish security alerts as part of the overall lifecycle program. We regularly conduct 3rd party code reviews of our products, have a private bug bounty program, and accept external reports from anyone regarding the security of our software.\n\nElastic maintains a documented public process for submitting vulnerabilities and security-related issues at https://www.elastic.co/community/security.\n\nThe company also publishes vulnerabilities via Bugtraq and also public announcements at https://discuss.elastic.co/c/security-announcements.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-03",
+        "question-id": "CCC-03.3",
+        "answer": "yes",
+        "comment": "Elastic maintains a documented public process for submitting vulnerabilities and security-related issues at https://www.elastic.co/community/security \n\nThe company follows a documented (internal) process on responding to vulnerability and other security-related reports. The company has created a team of the most security-knowledgeable people on each product collaborating to evaluate and respond to reports in a private mailing list. The company also publishes vulnerabilities via Bugtraq and also public announcements at https://discuss.elastic.co/c/security-announcements",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-03",
+        "question-id": "CCC-03.4",
+        "answer": "yes",
+        "comment": "Our SDLC process is built around our unique open source development model. \n\nAll engineers and developers receive annual training to ensure they are aware of common security problems, how to identify and resolve them, as well as how to report such problems to the appropriate teams for remiation and verification.\n\nChanges are vetted by multiple security aware reviewers. We have programs in place to understand third party components, track known issues in them as well as updating the components as needed. Releases receive scrutiny to identify any issues in the supply chain and product itself. \n\nWe are a CVE CNA and publish security alerts as part of the overall lifecycle program.\n\nWe regularly conduct 3rd party code reviews of our products, run a bug bounty program, and accept external reports from anyone regarding the security of our software.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-03",
+        "question-id": "CCC-03.5",
+        "answer": "yes",
+        "comment": "All source code is managed through the same process and subject to the SDLC controls described in this document.\n\nSource code that is contributed by open source contributors can only be merged into the codebase by Elastic employees.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-03",
+        "question-id": "CCC-03.6",
+        "answer": "yes",
+        "comment": "Our SDLC process and controls including peer review ensure that debugging and test code elements are removed. \n\nTesting takes place as part of a structured CI/CD pipeline during software builds.\n\nWe conduct 3rd party code reviews of our products including prior to major releases.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-04",
+        "question-id": "CCC-04.1",
+        "answer": "yes",
+        "comment": "We have a number of controls in place to address this requirement as part of a defense in depth approach. These include Access Control, Configuration Management, Audit Logging, and Monitoring.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-05",
+        "question-id": "CCC-05.1",
+        "answer": "NA",
+        "comment": "We have a Change Management Standard which ensures requirements for change management are designed to control and manage the propagation of software and infrastructure changes to a production environment. This process ensures that changes proposed are reviewed, authorized, tested, implemented, and released in a controlled manner, and that the status of each proposed change is documented and monitored. The requirements related to Emergency Changes are also included in this document.\n\nIncluded within the Change Management Standard are our formal requirements for our Systems Development Life Cycle (SDLC). This is the overall process of developing, implementing, and retiring information systems through a multistep process from initiation, analysis, design, implementation, and maintenance to disposal. We do not share such policies externally.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-05",
+        "question-id": "CCC-05.2",
+        "answer": "yes",
+        "comment": "We have a Change Management Standard which ensures requirements for change management are designed to control and manage the propagation of software and infrastructure changes to a production environment. This process ensures that changes proposed are reviewed, authorized, tested, implemented, and released in a controlled manner, and that the status of each proposed change is documented and monitored. The requirements related to Emergency Changes are also included in this document.\n\nIncluded within the Change Management Standard are our formal requirements for our Systems Development Life Cycle (SDLC). This is the overall process of developing, implementing, and retiring information systems through a multistep process from initiation, analysis, design, implementation, and maintenance to disposal. We do not share such policies externally.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "CCC-05",
+        "question-id": "CCC-05.3",
+        "answer": "yes",
+        "comment": "Deployment to production is controlled via Change Management.\n- Changes are branches in repository, version controlled.\n- All changes are automatically tested by a pipeline of tools including security checks.\n- All testing is registered in GitHub and must pass before testing is complete.\n- To merge new code into production, needs approval by another developer/engineer\n- Security or operationally sensitive portions of the codebase require specific review/approval from the appropriate team (e.g. Security).",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-csa-cloud.xlsx"
+    },
+    "control-domains": [
+      {
+        "id": "BCR",
+        "title": "Business Continuity Management & Operational Resilience",
+        "controls": [
+          {
+            "id": "BCR-01",
+            "title": "Business Continuity Planning",
+            "specification": "A consistent unified framework for business continuity planning and plan development shall be established, documented, and adopted to ensure all business continuity plans are consistent in addressing priorities for testing, maintenance, and information security requirements. Requirements for business continuity plans include the following:\n • Defined purpose and scope, aligned with relevant dependencies\n • Accessible to and understood by those who will use them\n • Owned by a named person(s) who is responsible for their review, update, and approval\n • Defined lines of communication, roles, and responsibilities\n • Detailed recovery procedures, manual work-around, and reference information\n • Method for plan invocation",
+            "questions": [
+              {
+                "id": "BCR-01.1",
+                "content": "Does your organization have a plan or framework for business continuity management or disaster recovery management?"
+              },
+              {
+                "id": "BCR-01.2",
+                "content": "Do you have more than one provider for each service you depend on?"
+              },
+              {
+                "id": "BCR-01.3",
+                "content": "Do you provide a disaster recovery capability?"
+              },
+              {
+                "id": "BCR-01.4",
+                "content": "Do you monitor service continuity with upstream providers in the event of provider failure?"
+              },
+              {
+                "id": "BCR-01.5",
+                "content": "Do you provide access to operational redundancy reports, including the services you rely on?"
+              },
+              {
+                "id": "BCR-01.6",
+                "content": "Do you provide a tenant-triggered failover option?"
+              },
+              {
+                "id": "BCR-01.7",
+                "content": "Do you share your business continuity and redundancy plans with your tenants?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-02",
+            "title": "Business Continuity Testing",
+            "specification": "Business continuity and security incident response plans shall be subject to testing at planned intervals or upon significant organizational or environmental changes. Incident response plans shall involve impacted customers (tenant) and other business relationships that represent critical intra-supply chain business process dependencies.",
+            "questions": [
+              {
+                "id": "BCR-02.1",
+                "content": "Are business continuity plans subject to testing at planned intervals or upon significant organizational or environmental changes to ensure continuing effectiveness?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-03",
+            "title": "Power / Telecommunications",
+            "specification": "Data center utilities services and environmental conditions (e.g., water, power, temperature and humidity controls, telecommunications, and internet connectivity) shall be secured, monitored, maintained, and tested for continual effectiveness at planned intervals to ensure protection from unauthorized interception or damage, and designed with automated fail-over or other redundancies in the event of planned or unplanned disruptions.",
+            "questions": [
+              {
+                "id": "BCR-03.1",
+                "content": "Does your organization adhere to any international or industry standards when it comes to securing, monitoring, maintaining and testing of datacenter utilities services and environmental conditions?"
+              },
+              {
+                "id": "BCR-03.2",
+                "content": "Has your organization implemented environmental controls, fail-over mechanisms or other redundancies to secure utility services and mitigate environmental conditions?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-04",
+            "title": "Documentation",
+            "specification": "Information system documentation (e.g., administrator and user guides, and architecture diagrams) shall be made available to authorized personnel to ensure the following:\n • Configuring, installing, and operating the information system\n • Effectively using the system’s security features",
+            "questions": [
+              {
+                "id": "BCR-04.1",
+                "content": "Are information system documents (e.g., administrator and user guides, architecture diagrams, etc.) made available to authorized personnel to ensure configuration, installation and operation of the information system?\n"
+              }
+            ]
+          },
+          {
+            "id": "BCR-05",
+            "title": "Environmental Risks",
+            "specification": "Physical protection against damage from natural causes and disasters, as well as deliberate attacks, including fire, flood, atmospheric electrical discharge, solar induced geomagnetic storm, wind, earthquake, tsunami, explosion, nuclear accident, volcanic activity, biological hazard, civil unrest, mudslide, tectonic activity, and other forms of natural or man-made disaster shall be anticipated, designed, and have countermeasures applied.",
+            "questions": [
+              {
+                "id": "BCR-05.1",
+                "content": "Is physical damage anticipated and are countermeasures included in the design of physical protections?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-06",
+            "title": "Equipment Location",
+            "specification": "To reduce the risks from environmental threats, hazards, and opportunities for unauthorized access, equipment shall be kept away from locations subject to high probability environmental risks and supplemented by redundant equipment located at a reasonable distance.",
+            "questions": [
+              {
+                "id": "BCR-06.1",
+                "content": "Are any of your data centers located in places that have a high probability/occurrence of high-impact environmental risks (floods, tornadoes, earthquakes, hurricanes, etc.)?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-07",
+            "title": "Equipment Maintenance",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, for equipment maintenance ensuring continuity and availability of operations and support personnel.",
+            "questions": [
+              {
+                "id": "BCR-07.1",
+                "content": "Do you have documented policies, procedures and supporting business processes for equipment and datacenter maintenance?"
+              },
+              {
+                "id": "BCR-07.2",
+                "content": "Do you have an equipment and datacenter maintenance routine or plan?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-08",
+            "title": "Equipment Power Failures",
+            "specification": "Protection measures shall be put into place to react to natural and man-made threats based upon a geographically-specific business impact assessment.",
+            "questions": [
+              {
+                "id": "BCR-08.1",
+                "content": "Are security mechanisms and redundancies implemented to protect equipment from utility service outages (e.g., power failures, network disruptions, etc.)?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-09",
+            "title": "Impact Analysis",
+            "specification": "There shall be a defined and documented method for determining the impact of any disruption to the organization (cloud provider, cloud consumer) that must incorporate the following:\n • Identify critical products and services\n • Identify all dependencies, including processes, applications, business partners, and third party service providers\n • Understand threats to critical products and services\n • Determine impacts resulting from planned or unplanned disruptions and how these vary over time\n • Establish the maximum tolerable period for disruption\n • Establish priorities for recovery\n • Establish recovery time objectives for resumption of critical products and services within their maximum tolerable period of disruption\n • Estimate the resources required for resumption",
+            "questions": [
+              {
+                "id": "BCR-09.1",
+                "content": "Do you use industry standards and frameworks to determine the impact of any disruption to your organization (i.e. criticality of services and recovery priorities, disruption tolerance, RPO and RTO etc) ?"
+              },
+              {
+                "id": "BCR-09.2",
+                "content": "Does your organization conduct impact analysis pertaining to possible disruptions to the cloud service?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-10",
+            "title": "Policy",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, for appropriate IT governance and service management to ensure appropriate planning, delivery and support of the organization's IT capabilities supporting business functions, workforce, and/or customers based on industry acceptable standards (i.e., ITIL v4 and COBIT 5). Additionally, policies and procedures shall include defined roles and responsibilities supported by regular workforce training.",
+            "questions": [
+              {
+                "id": "BCR-10.1",
+                "content": "Are policies and procedures established and made available for all personnel to adequately support services operations’ roles?"
+              }
+            ]
+          },
+          {
+            "id": "BCR-11",
+            "title": "Retention Policy",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, for defining and adhering to the retention period of any critical asset as per established policies and procedures, as well as applicable legal, statutory, or regulatory compliance obligations. Backup and recovery measures shall be incorporated as part of business continuity planning and tested accordingly for effectiveness.",
+            "questions": [
+              {
+                "id": "BCR-11.1",
+                "content": "Do you have technical capabilities to enforce tenant data retention policies?"
+              },
+              {
+                "id": "BCR-11.2",
+                "content": "Do you have documented policies and procedures demonstrating adherence to data retention periods as per legal, statutory or regulatory compliance requirements?"
+              },
+              {
+                "id": "BCR-11.3",
+                "content": "Have you implemented backup or recovery mechanisms to ensure compliance with regulatory, statutory, contractual or business requirements?"
+              },
+              {
+                "id": "BCR-11.4",
+                "content": "If using virtual infrastructure, does your cloud solution include independent hardware restore and recovery capabilities?"
+              },
+              {
+                "id": "BCR-11.5",
+                "content": "If using virtual infrastructure, do you provide tenants with a capability to restore a virtual machine to a previous configuration?"
+              },
+              {
+                "id": "BCR-11.6",
+                "content": "Does your cloud solution include software/provider independent restore and recovery capabilities?"
+              },
+              {
+                "id": "BCR-11.7",
+                "content": "Do you test your backup or redundancy mechanisms at least annually?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

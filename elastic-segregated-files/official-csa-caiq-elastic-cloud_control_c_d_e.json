@@ -1,0 +1,414 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-csa-caiq-elastic-cloud.xlsx"
+    },
+    "control-domains": [
+      {
+        "id": "CCC",
+        "title": "Change Control & Configuration Management",
+        "controls": [
+          {
+            "id": "CCC-01",
+            "title": "New Development / Acquisition",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, to ensure the development and/or acquisition of new data, physical or virtual applications, infrastructure network and systems components, or any corporate, operations and/or data center facilities have been pre-authorized by the organization's business leadership or other accountable business role or function.",
+            "questions": [
+              {
+                "id": "CCC-01.1",
+                "content": "Are policies and procedures established for management authorization for development or acquisition of new applications, systems, databases, infrastructure, services, operations and facilities?"
+              }
+            ]
+          },
+          {
+            "id": "CCC-02",
+            "title": "Outsourced Development",
+            "specification": "External business partners shall adhere to the same policies and procedures for change management, release, and testing as internal developers within the organization (e.g., ITIL service management processes).",
+            "questions": [
+              {
+                "id": "CCC-02.1",
+                "content": "Are policies and procedures for change management, release, and testing adequately communicated to external business partners?"
+              },
+              {
+                "id": "CCC-02.2",
+                "content": "Are policies and procedures adequately enforced to ensure external business partners comply with change management requirements?"
+              }
+            ]
+          },
+          {
+            "id": "CCC-03",
+            "title": "Quality Testing",
+            "specification": "Organizations shall follow a defined quality change control and testing process (e.g., ITIL Service Management) with established baselines, testing, and release standards which focus on system availability, confidentiality, and integrity of systems and services.",
+            "questions": [
+              {
+                "id": "CCC-03.1",
+                "content": "Do you have a defined quality change control and testing process in place based on system availability, confidentiality, and integrity?"
+              },
+              {
+                "id": "CCC-03.2",
+                "content": "Is documentation describing known issues with certain products/services available?"
+              },
+              {
+                "id": "CCC-03.3",
+                "content": "Are there policies and procedures in place to triage and remedy reported bugs and security vulnerabilities for product and service offerings?"
+              },
+              {
+                "id": "CCC-03.4",
+                "content": "Do you have controls in place to ensure that standards of quality are being met for all software development?"
+              },
+              {
+                "id": "CCC-03.5",
+                "content": "Do you have controls in place to detect source code security defects for any outsourced software development activities?"
+              },
+              {
+                "id": "CCC-03.6",
+                "content": "Are mechanisms in place to ensure that all debugging and test code elements are removed from released software versions?"
+              }
+            ]
+          },
+          {
+            "id": "CCC-04",
+            "title": "Unauthorized Software Installations",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, to restrict the installation of unauthorized software on organizationally-owned or managed user end-point devices (e.g., issued workstations, laptops, and mobile devices) and IT infrastructure network and systems components.",
+            "questions": [
+              {
+                "id": "CCC-04.1",
+                "content": "Do you have controls in place to restrict and monitor the installation of unauthorized software onto your systems?"
+              }
+            ]
+          },
+          {
+            "id": "CCC-05",
+            "title": "Production Changes",
+            "specification": "Policies and procedures shall be established for managing the risks associated with applying changes to:\n • Business-critical or customer (tenant)-impacting (physical and virtual) applications and system-system interface (API) designs and configurations.\n • Infrastructure network and systems components.\nTechnical measures shall be implemented to provide assurance that all changes directly correspond to a registered change request, business-critical or customer (tenant), and/or authorization by, the customer (tenant) as per agreement (SLA) prior to deployment.",
+            "questions": [
+              {
+                "id": "CCC-05.1",
+                "content": "Do you provide tenants with documentation that describes your production change management procedures and their roles/rights/responsibilities within it?"
+              },
+              {
+                "id": "CCC-05.2",
+                "content": "Do you have policies and procedures established for managing risks with respect to change management in production environments?"
+              },
+              {
+                "id": "CCC-05.3",
+                "content": "Do you have technical measures in place to ensure that changes in production environments are registered, authorized and in adherence with existing SLAs?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DSI",
+        "title": "Data Security & Information Lifecycle Management",
+        "controls": [
+          {
+            "id": "DSI-01",
+            "title": "Classification",
+            "specification": "Data and objects containing data shall be assigned a classification by the data owner based on data type, value, sensitivity, and criticality to the organization.",
+            "questions": [
+              {
+                "id": "DSI-01.1",
+                "content": "Do you provide a capability to identify data and virtual machines via policy tags/metadata (e.g., tags can be used to limit guest operating systems from booting/instantiating/transporting data in the wrong country)?"
+              },
+              {
+                "id": "DSI-01.2",
+                "content": "Do you provide a capability to identify data and hardware via policy tags/metadata/hardware tags (e.g., TXT/TPM, VN-Tag, etc.)?"
+              }
+            ]
+          },
+          {
+            "id": "DSI-02",
+            "title": "Data Inventory / Flows",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, to inventory, document, and maintain data flows for data that is resident (permanently or temporarily) within the service's geographically distributed (physical and virtual) applications and infrastructure network and systems components and/or shared with other third parties to ascertain any regulatory, statutory, or supply chain agreement (SLA) compliance impact, and to address any other business risks associated with the data. Upon request, provider shall inform customer (tenant) of compliance impact and risk, especially if customer data is used as part of the services.",
+            "questions": [
+              {
+                "id": "DSI-02.1",
+                "content": "Do you inventory, document, and maintain data flows for data that is resident (permanent or temporary) within the services' applications and infrastructure network and systems?"
+              },
+              {
+                "id": "DSI-02.2",
+                "content": "Can you ensure that data does not migrate beyond a defined geographical residency?"
+              }
+            ]
+          },
+          {
+            "id": "DSI-03",
+            "title": "E-commerce Transactions",
+            "specification": "Data related to electronic commerce (e-commerce) that traverses public networks shall be appropriately classified and protected from fraudulent activity, unauthorized disclosure, or modification in such a manner to prevent contract dispute and compromise of data.",
+            "questions": [
+              {
+                "id": "DSI-03.1",
+                "content": "Do you provide standardized (e.g. ISO/IEC) non-proprietary encryption algorithms (3DES, AES, etc.) to tenants in order for them to protect their data if it is required to move through public networks (e.g., the Internet)?"
+              },
+              {
+                "id": "DSI-03.2",
+                "content": "Do you utilize open encryption methodologies any time your infrastructure components need to communicate with each other via public networks (e.g., Internet-based replication of data from one environment to another)?"
+              }
+            ]
+          },
+          {
+            "id": "DSI-04",
+            "title": "Handling / Labeling / Security Policy",
+            "specification": "Policies and procedures shall be established for labeling, handling, and the security of data and objects which contain data. Mechanisms for label inheritance shall be implemented for objects that act as aggregate containers for data.",
+            "questions": [
+              {
+                "id": "DSI-04.1",
+                "content": "Are policies and procedures established for data labeling and handling in order to ensure the security of data and objects that contain data?"
+              },
+              {
+                "id": "DSI-04.2",
+                "content": "Do you follow a structured data-labeling standard (e.g., ISO 15489, Oasis XML Catalog Specification, CSA data type guidance)?"
+              },
+              {
+                "id": "DSI-04.3",
+                "content": "Are mechanisms for label inheritance implemented for objects that act as aggregate containers for data?"
+              }
+            ]
+          },
+          {
+            "id": "DSI-05",
+            "title": "Nonproduction Data",
+            "specification": "Production data shall not be replicated or used in non-production environments. Any use of customer data in non-production environments requires explicit, documented approval from all customers whose data is affected, and must comply with all legal and regulatory requirements for scrubbing of sensitive data elements.",
+            "questions": [
+              {
+                "id": "DSI-05.1",
+                "content": "Do you have procedures in place to ensure production data shall not be replicated or used in non-production environments?"
+              }
+            ]
+          },
+          {
+            "id": "DSI-06",
+            "title": "Ownership / Stewardship",
+            "specification": "All data shall be designated with stewardship, with assigned responsibilities defined, documented, and communicated.",
+            "questions": [
+              {
+                "id": "DSI-06.1",
+                "content": "Are the responsibilities regarding data stewardship defined, assigned, documented, and communicated?"
+              }
+            ]
+          },
+          {
+            "id": "DSI-07",
+            "title": "Secure Disposal",
+            "specification": "Policies and procedures shall be established with supporting business processes and technical measures implemented for the secure disposal and complete removal of data from all storage media, ensuring data is not recoverable by any computer forensic means.",
+            "questions": [
+              {
+                "id": "DSI-07.1",
+                "content": "Do you support the secure deletion (e.g., degaussing/cryptographic wiping) of archived and backed-up data?"
+              },
+              {
+                "id": "DSI-07.2",
+                "content": "Can you provide a published procedure for exiting the service arrangement, including assurance to sanitize all computing resources of tenant data once a customer has exited your environment or has vacated a resource?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DCS",
+        "title": "Datacenter Security",
+        "controls": [
+          {
+            "id": "DCS-01",
+            "title": "Asset Management",
+            "specification": "Assets must be classified in terms of business criticality, service-level expectations, and operational continuity requirements. A complete inventory of business-critical assets located at all sites and/or geographical locations and their usage over time shall be maintained and updated regularly, and assigned ownership by defined roles and responsibilities.",
+            "questions": [
+              {
+                "id": "DCS-01.1",
+                "content": "Do you classify your assets in terms of business criticality, service-level expectations, and operational continuity requirements?"
+              },
+              {
+                "id": "DCS-01.2",
+                "content": "Do you maintain a complete inventory of all of your critical assets located at all sites/ or geographical locations and their assigned ownership?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-02",
+            "title": "Controlled Access Points",
+            "specification": "Physical security perimeters (e.g., fences, walls, barriers, guards, gates, electronic surveillance, physical authentication mechanisms, reception desks, and security patrols) shall be implemented to safeguard sensitive data and information systems.",
+            "questions": [
+              {
+                "id": "DCS-02.1",
+                "content": "Are physical security perimeters (e.g., fences, walls, barriers, guards, gates, electronic surveillance, physical authentication mechanisms, reception desks, and security patrols) implemented for all areas housing sensitive data and information systems?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-03",
+            "title": "Equipment Identification",
+            "specification": "Automated equipment identification shall be used as a method of connection authentication. Location-aware technologies may be used to validate connection authentication integrity based on known equipment location.",
+            "questions": [
+              {
+                "id": "DCS-03.1",
+                "content": "Do you have a capability to use system geographic location as an authentication factor?"
+              },
+              {
+                "id": "DCS-03.2",
+                "content": "Is automated equipment identification used as a method to validate connection authentication integrity based on known equipment location?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-04",
+            "title": "Offsite Authorization",
+            "specification": "Authorization must be obtained prior to relocation or transfer of hardware, software, or data to an offsite premises.",
+            "questions": [
+              {
+                "id": "DCS-04.1",
+                "content": "Is authorization obtained prior to relocation or transfer of hardware, software, or data to an offsite premises?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-05",
+            "title": "Offsite Equipment",
+            "specification": "Policies and procedures shall be established for the secure disposal of equipment (by asset type) used outside the organization's premise. This shall include a wiping solution or destruction process that renders recovery of information impossible. The erasure shall consist of a full write of the drive to ensure that the erased drive is released to inventory for reuse and deployment or securely stored until it can be destroyed.",
+            "questions": [
+              {
+                "id": "DCS-05.1",
+                "content": "Can you provide tenants with your asset management policies and procedures?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-06",
+            "title": "Policy",
+            "specification": "Policies and procedures shall be established, and supporting business processes implemented, for maintaining a safe and secure working environment in offices, rooms, facilities, and secure areas storing sensitive information.",
+            "questions": [
+              {
+                "id": "DCS-06.1",
+                "content": "Can you provide evidence that policies, standards, and procedures have been established for maintaining a safe and secure working environment in offices, rooms, facilities, and secure areas?"
+              },
+              {
+                "id": "DCS-06.2",
+                "content": "Can you provide evidence that your personnel and involved third parties have been trained regarding your documented policies, standards, and procedures?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-07",
+            "title": "Secure Area Authorization",
+            "specification": "Ingress and egress to secure areas shall be constrained and monitored by physical access control mechanisms to ensure that only authorized personnel are allowed access.",
+            "questions": [
+              {
+                "id": "DCS-07.1",
+                "content": "Are physical access control mechanisms (e.g. CCTV cameras, ID cards, checkpoints) in place to secure, constrain and monitor egress and ingress points?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-08",
+            "title": "Unauthorized Persons Entry",
+            "specification": "Ingress and egress points such as service areas and other points where unauthorized personnel may enter the premises shall be monitored, controlled and, if possible, isolated from data storage and processing facilities to prevent unauthorized data corruption, compromise, and loss.",
+            "questions": [
+              {
+                "id": "DCS-08.1",
+                "content": "Are ingress and egress points, such as service areas and other points where unauthorized personnel may enter the premises, monitored, controlled and isolated from data storage and process?"
+              }
+            ]
+          },
+          {
+            "id": "DCS-09",
+            "title": "User Access",
+            "specification": "Physical access to information assets and functions by users and support personnel shall be restricted.",
+            "questions": [
+              {
+                "id": "DCS-09.1",
+                "content": "Do you restrict physical access to information assets and functions by users and support personnel?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EKM",
+        "title": "Encryption & Key Management",
+        "controls": [
+          {
+            "id": "EKM-01",
+            "title": "Entitlement",
+            "specification": "Keys must have identifiable owners (binding keys to identities) and there shall be key management policies.",
+            "questions": [
+              {
+                "id": "EKM-01.1",
+                "content": "Do you have key management policies binding keys to identifiable owners?"
+              }
+            ]
+          },
+          {
+            "id": "EKM-02",
+            "title": "Key Generation",
+            "specification": "Policies and procedures shall be established for the management of cryptographic keys in the service's cryptosystem (e.g., lifecycle management from key generation to revocation and replacement, public key infrastructure, cryptographic protocol design and algorithms used, access controls in place for secure key generation, and exchange and storage including segregation of keys used for encrypted data or sessions). Upon request, provider shall inform the customer (tenant) of changes within the cryptosystem, especially if the customer (tenant) data is used as part of the service, and/or the customer (tenant) has some shared responsibility over implementation of the control.",
+            "questions": [
+              {
+                "id": "EKM-02.1",
+                "content": "Do you have a capability to allow creation of unique encryption keys per tenant?"
+              },
+              {
+                "id": "EKM-02.2",
+                "content": "Do you have a capability to manage encryption keys on behalf of tenants?"
+              },
+              {
+                "id": "EKM-02.3",
+                "content": "Do you maintain key management procedures?"
+              },
+              {
+                "id": "EKM-02.4",
+                "content": "Do you have documented ownership for each stage of the lifecycle of encryption keys?"
+              },
+              {
+                "id": "EKM-02.5",
+                "content": "Do you utilize any third party/open source/proprietary frameworks to manage encryption keys?"
+              }
+            ]
+          },
+          {
+            "id": "EKM-03",
+            "title": "Encryption",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, for the use of encryption protocols for protection of sensitive data in storage (e.g., file servers, databases, and end-user workstations) and data in transmission (e.g., system interfaces, over public networks, and electronic messaging) as per applicable legal, statutory, and regulatory compliance obligations.",
+            "questions": [
+              {
+                "id": "EKM-03.1",
+                "content": "Do you encrypt tenant data at rest (on disk/storage) within your environment?"
+              },
+              {
+                "id": "EKM-03.2",
+                "content": "Do you leverage encryption to protect data and virtual machine images during transport across and between networks and hypervisor instances?"
+              },
+              {
+                "id": "EKM-03.3",
+                "content": "Do you have documentation establishing and defining your encryption management policies, procedures, and guidelines?"
+              }
+            ]
+          },
+          {
+            "id": "EKM-04",
+            "title": "Storage and Access",
+            "specification": "Platform and data appropriate encryption (e.g., AES-256) in open/validated formats and standard algorithms shall be required. Keys shall not be stored in the cloud (i.e. at the cloud provider in question), but maintained by the cloud consumer or trusted key management provider. Key management and key usage shall be separated duties.",
+            "questions": [
+              {
+                "id": "EKM-04.1",
+                "content": "Do you have platform and data appropriate encryption that uses open/validated formats and standard algorithms?"
+              },
+              {
+                "id": "EKM-04.2",
+                "content": "Are your encryption keys maintained by the cloud consumer or a trusted key management provider?"
+              },
+              {
+                "id": "EKM-04.3",
+                "content": "Do you store encryption keys in the cloud?"
+              },
+              {
+                "id": "EKM-04.4",
+                "content": "Do you have separate key management and key usage duties?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

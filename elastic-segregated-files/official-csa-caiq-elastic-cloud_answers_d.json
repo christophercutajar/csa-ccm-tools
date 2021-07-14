@@ -1,0 +1,236 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "DCS-01",
+        "question-id": "DCS-01.1",
+        "answer": "yes",
+        "comment": "All critical assets are required to be registered in our asset inventory. Elastic performs ongoing reviews of our asset inventory for completeness and accuracy.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-01",
+        "question-id": "DCS-01.2",
+        "answer": "yes",
+        "comment": "As part of the Elastic Third Party Information Risk Management process, Elastic reviews the security practices of its third parties to ensure adequate security controls are in place. As part of this process, we maintain an inventory of critical suppliers.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-02",
+        "question-id": "DCS-02.1",
+        "answer": "yes",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-03",
+        "question-id": "DCS-03.1",
+        "answer": "yes",
+        "comment": "Customers can integrate Elastic Cloud deployments with their own Identity Provider (IdP) using SAML.\n\nIf the customer IdP supports geographic location as a factor, this could be utilized in authentication requests for Elastic Cloud. \n\nhttps://www.elastic.co/guide/en/cloud/current/ec-securing-clusters-SAML.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-03",
+        "question-id": "DCS-03.2",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-04",
+        "question-id": "DCS-04.1",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-05",
+        "question-id": "DCS-05.1",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-06",
+        "question-id": "DCS-06.1",
+        "answer": "yes",
+        "comment": "Elastic is SOC2 Type 2 compliant. Customers and prospective customers can request copies of our SOC2 reports which contain evidence of the policies, standards and procedures that have been audited as part of the process.\n\nOur ISO 27001 Certificate is available at: https://www.elastic.co/security-and-compliance",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-06",
+        "question-id": "DCS-06.2",
+        "answer": "yes",
+        "comment": "Elastic is SOC2 Type 2 compliant. Customers and prospective customers can request copies of our SOC2 reports which contain evidence of the policies, standards and procedures that have been audited as part of the process.\n\nOur ISO 27001 Certificate is available at: https://www.elastic.co/security-and-compliance",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-07",
+        "question-id": "DCS-07.1",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-08",
+        "question-id": "DCS-08.1",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/\nFor GCP, see https://cloud.google.com/security/compliance/#/\nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DCS-09",
+        "question-id": "DCS-09.1",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/\nFor GCP, see https://cloud.google.com/security/compliance/#/\nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-01",
+        "question-id": "DSI-01.1",
+        "answer": "yes",
+        "comment": "Elastic Cloud is a SaaS service. While we use these underlying capabilities at the infrastructure layer, they are not directly exposed to the customer.\n\nElastic Cloud customers are provided with the flexibility to choose the underlying IaaS provider and geographical region on a per-deployment basis.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-01",
+        "question-id": "DSI-01.2",
+        "answer": "NA",
+        "comment": "Elastic uses hosted infrastructure as a service and does not have direct access to hardware. This control is inherited from the IaaS provider.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-02",
+        "question-id": "DSI-02.1",
+        "answer": "yes",
+        "comment": "This is done via documented data flows which are documented and maintained.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-02",
+        "question-id": "DSI-02.2",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers are provided with the flexibility to choose the underlying IaaS provider and geographical region on a per-deployment basis.\n\nAvailable regions can be found at: https://www.elastic.co/cloud/regions",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-03",
+        "question-id": "DSI-03.1",
+        "answer": "yes",
+        "comment": "Data in transit to, from and within the Elastic Cloud environment is encrypted using the open encryption standard TLS 1.2 with strong ciphers. TLS versions older than 1.2 are disabled.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-03",
+        "question-id": "DSI-03.2",
+        "answer": "yes",
+        "comment": "Data in transit to, from and within the Elastic Cloud environment is encrypted using the open encryption standard TLS 1.2 with strong ciphers. TLS versions older than 1.2 are disabled.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-04",
+        "question-id": "DSI-04.1",
+        "answer": "yes",
+        "comment": "The company’s Information Security Program Policy specifies the Data Classification Standard which governs labeling, handling and the security of information. Elastic classifies all customer data as 'Restricted' according to the standard. This, in turn, receives the highest level of protection.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-04",
+        "question-id": "DSI-04.2",
+        "answer": "yes",
+        "comment": "Customers choose what data is stored and how it is secured. Internally, we use a Data Classification Standard that identifies all customer data as RESTRICTED.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-04",
+        "question-id": "DSI-04.3",
+        "answer": "yes",
+        "comment": "The company’s Information Security Program Policy specifies the Data Classification Standard which governs labeling, handling and the security of information. Elastic classifies all customer data as 'Restricted' according to the standard. This, in turn, receives the highest level of protection.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-05",
+        "question-id": "DSI-05.1",
+        "answer": "yes",
+        "comment": "Non-production environments are segregated from production environments at multiple levels including network and IaaS provider account.\n\nCustomer data is never used in testing or other non-production environments without explicit, documented approval from all customers whose data is affected.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-06",
+        "question-id": "DSI-06.1",
+        "answer": "yes",
+        "comment": "The company’s Information Security Program Policy specifies the Data Classification Standard which governs labeling, handling and the security of information. Elastic classifies all customer data as 'Restricted' according to the standard which in turn, receives the highest level of protection.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-07",
+        "question-id": "DSI-07.1",
+        "answer": "yes",
+        "comment": "All customer information is stored in our cloud based data centers. As a part of our customer off boarding process, we securely delete any information from the customer as well as the customer cluster.\n\nElastic Cloud customers are able to delete data at thier own discretion and at any time without Elastic involvement.\n\nControls around secure disposal of media and hardware are inherited from the underlying IaaS provider, as chosen by the customer.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "DSI-07",
+        "question-id": "DSI-07.2",
+        "answer": "yes",
+        "comment": "This is agreed contractually. All customer information is stored in our cloud based data centers. As part of our customer off boarding process, we securely delete any information from the customer as well as the customer cluster.\n\nElastic Cloud customers are able to delete data at thier own discretion and at any time without Elastic involvement.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

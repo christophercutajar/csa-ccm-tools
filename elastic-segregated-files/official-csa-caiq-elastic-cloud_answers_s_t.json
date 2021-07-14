@@ -1,0 +1,497 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "SEF-01",
+        "question-id": "SEF-01.1",
+        "answer": "yes",
+        "comment": "Elastic's Incident Response and Recovery plan includes contact information for external parties that can be leveraged during an incident to provide specific services and guidance.  These include external legal counsel, the US-CERT and the FedRAMP ISSO.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-02",
+        "question-id": "SEF-02.1",
+        "answer": "yes",
+        "comment": "The Elastic InfoSec team has developed and communicated a Security and Privacy Incident Management Standard and supporting plans and procedures.\n\n",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-02",
+        "question-id": "SEF-02.2",
+        "answer": "no",
+        "comment": "Tenants are not permitted to define and customize our internal policies and standards.\n\nElastic's Security Incident Management Standard defines requirements for notifying customers in the event of a security incident based on regulatory requirements including privacy, and contractual requirements. \n\nElastic's security incident response plan includes steps for evaluating whether customers should be notified.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-02",
+        "question-id": "SEF-02.3",
+        "answer": "yes",
+        "comment": "Roles and responsibilities are defined as part of the Security Incident Response and Recovery plan.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-02",
+        "question-id": "SEF-02.4",
+        "answer": "yes",
+        "comment": "Security Incident Response plans are tested at least annually.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-03",
+        "question-id": "SEF-03.1",
+        "answer": "yes",
+        "comment": "All personnel are informed of their responsibility and the appropriate mechanisms for reporting Information Security Events to the InfoSec team.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-03",
+        "question-id": "SEF-03.2",
+        "answer": "yes",
+        "comment": "Elastic's Incident Response and Recovery plan includes contact information or procedures to determine contact information for relevant parties including customers and partners, external legal counsel, the US-CERT and the FedRAMP ISSO.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-04",
+        "question-id": "SEF-04.1",
+        "answer": "yes",
+        "comment": "Elastic has a documented Incident Response and Recovery plan. The plan complies with and is regularly audited against industry standards.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-04",
+        "question-id": "SEF-04.2",
+        "answer": "yes",
+        "comment": "The Incident Response capability includes the use of legally admissible forensic data collection and analysis techniques.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-04",
+        "question-id": "SEF-04.3",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers have control over their content including the ability to manage snapshots.\n\nBackup snapshots are taken on a per-deployment basis and are configurable by the customer. The default snapshot interval is 30 minutes. Customers can restore data to the same or a different deployment on-demand and without involvement from Elastic. This functionality could be used to move one or more snapshots into litigation hold without affecting other customers.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-04",
+        "question-id": "SEF-04.4",
+        "answer": "yes",
+        "comment": "Elastic does not provide any government with direct or unfettered access to customer data. Elastic releases only specific data mandated by the relevant legal demand. If a government wants customer data for any purpose it needs to follow the applicable legal process, meaning it must serve us with a court order for content or a subpoena for account information.\n\nIf compelled to disclose customer data, we will promptly notify you and provide a copy of the demand, unless legally prohibited from doing so. We respond only to requests for specific accounts and identifiers. There is no blanket or indiscriminate access to Elastic’s customer data.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-05",
+        "question-id": "SEF-05.1",
+        "answer": "yes",
+        "comment": "Categorization and quantification of cases and investigations is part of the Incident Management process and regularly communicated to management.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "SEF-05",
+        "question-id": "SEF-05.2",
+        "answer": "no",
+        "comment": "We do not share this information externally.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc: Security & Privacy Incident Response",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-01",
+        "question-id": "STA-01.1",
+        "answer": "yes",
+        "comment": "Where issues are identified, we work with our cloud providers to get these addressed in a timely manner.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-01",
+        "question-id": "STA-01.2",
+        "answer": "yes",
+        "comment": "A Third Party Information Risk Management process is in place where Elastic reviews the security practices of its third parties and negotiates security requirements into third party agreements. Components of this program include:\n- Maintaining a list of critical third-party vendors\n- Requirements for third-party vendors to maintain their own security practices and procedures \n- Annually reviewing critical third-parties",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-02",
+        "question-id": "STA-02.1",
+        "answer": "yes",
+        "comment": "Security incidents are logged, tracked, resolved, and communicated to affected parties by management according to the Elastic's security incident response policy. We will provide all relevant data to affected customers on a case by case basis, depending on incident severity and involvement.\n\nOperational incidents with broad impact are shared publicly at: https://cloud-status.elastic.co/\nIdentified security issues in our products are shared publicly at: https://www.elastic.co/community/security",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-03",
+        "question-id": "STA-03.1",
+        "answer": "yes",
+        "comment": "We do collect this data internally.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-03",
+        "question-id": "STA-03.2",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can manage capacity and scaling , including configuring auto-scaling, as a self-service functionality without Elastic involvement.\n\nCustomers can view the usage reports by logging into Elastic cloud console. https://cloud.elastic.co",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-04",
+        "question-id": "STA-04.1",
+        "answer": "yes",
+        "comment": "Annual internal assessments of conformance and effectiveness our policies, procedures, and supporting measures and metrics is achieved via the Information Security team which is responsible for security assurance, engineering and risk and compliance activities for the company. The team provides standards, guidance, assistance, and oversight to ensure security requirements are maintained across the organization and to holistically manage information risk. Information Security is also responsible for security monitoring and incident response activities. \n\nIn addition, annual security reviews/ audits (e.g. SOC 2) are also performed by third parties to assist with this.\n\nFinally, we utilize Infrastructure as a Service providers (IaaS) instead of maintaining our own data centers. Physical controls are managed by those providers and we perform due diligence on their controls as they are assessed by an independent, third party firm.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.1",
+        "answer": "yes",
+        "comment": "As part of our Third Party Information Risk Management process, Elastic reviews the security practices of its third parties and negotiates security requirements into third party agreements. \n\nCompliance with laws in the country where the data is processed, stored, and transmitted is taken into account and Legal are also involved as part of this process.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.10",
+        "answer": "yes",
+        "comment": "Elastic's Security Incident Management Standard defines requirements for notifying customers in the event of a security incident based on regulatory requirements including privacy, and contractual requirements.\n\nElastic's security incident response plan includes steps for evaluating whether customers should be notified.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.11",
+        "answer": "yes",
+        "comment": "Elastic products may collect telemetry used to measure feature usage and improve our products. Elastic Cloud customers may opt-out of sending telemetry data about their use of the products.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.12",
+        "answer": "no",
+        "comment": "We provide a list of sub processors in our Data Processing Agreements.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.2",
+        "answer": "yes",
+        "comment": "As part of our Third Party Information Risk Management process, Elastic reviews the security practices of its third parties and negotiates security requirements into third party agreements. \n\nCompliance with laws in the country where the data is processed, stored, and transmitted is taken into account and Legal are also involved as part of this process.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.3",
+        "answer": "yes",
+        "comment": "Legal is responsible for reviewing all third party agreements. In addition, the Third Party Information Risk Management process in place includes the Information Security team negotiating security requirements into third party agreements.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.4",
+        "answer": "yes",
+        "comment": "Legal negotiaties security requirements into third party agreements in collaboration with the Information Security team.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.5",
+        "answer": "yes",
+        "comment": "Backup snapshots are taken on a per-deployment basis and are configurable by the customer. The default snapshot interval is 30 minutes. Customers can restore data to the same or a different deployment on-demand and without involvement from Elastic. \n\nElastic backs up Elastic Cloud deployments for 14 days as an additional accommodation.\n",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.6",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers have complete control to select the cloud (IAAS) provider and geographic region on a per-deployment basis. Support for new regions in each IAAS provider is added regularly.\n\nThe currently available regions for each provider can be found at: https://www.elastic.co/guide/en/cloud/current/ec-reference-regions.html\n\nBackup snapshots remain within the same region, unless configured by the customer to use a custom snapshot repository in a different region.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.7",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers have complete control to select the cloud (IAAS) provider and geographic region on a per-deployment basis. Support for new regions in each IAAS provider is added regularly.\n\nThe currently available regions for each provider can be found at: https://www.elastic.co/guide/en/cloud/current/ec-reference-regions.html\n\nBackup snapshots remain within the same region, unless configured by the customer to use a custom snapshot repository in a different region.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.8",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers have complete control to select the cloud (IAAS) provider and geographic region on a per-deployment basis. Support for new regions in each IAAS provider is added regularly.\n\nThe currently available regions for each provider can be found at: https://www.elastic.co/guide/en/cloud/current/ec-reference-regions.html\n\nBackup snapshots remain within the same region, unless configured by the customer to use a custom snapshot repository in a different region.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-05",
+        "question-id": "STA-05.9",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers have complete control to select the cloud (IAAS) provider and geographic region on a per-deployment basis. Support for new regions in each IAAS provider is added regularly.\n\nElastic Cloud customers may optionally route data to different regions by configuring cross-cluster replication: https://www.elastic.co/guide/en/cloud/current/ec-enable-ccs.html\n\nThe currently available regions for each provider can be found at: https://www.elastic.co/guide/en/cloud/current/ec-reference-regions.html\n\nBackup snapshots remain within the same region, unless configured by the customer to use a custom snapshot repository in a different region.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-06",
+        "question-id": "STA-06.1",
+        "answer": "yes",
+        "comment": "A Third Party Information Risk Management process is in place where Elastic reviews the security practices of its third parties and negotiates security requirements into third party agreements. \n\nOne component of this program is the requirements for third-party vendors to maintain their own security practices and procedures and those of their sub-processors.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.1",
+        "answer": "yes",
+        "comment": "Terms of Service or Customer Subscription Agreements include the communication of Elastic's commitments to its tenants.\n\nCurrent and historic operational performance measures are available publicly at: https://cloud-status.elastic.co/\n\n",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.2",
+        "answer": "yes",
+        "comment": "The Third Party Information Risk Management Process includes this capability.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.3",
+        "answer": "yes",
+        "comment": "The services provided by third-party vendors are monitored against service levels by the department or team responsible for the vendor relationship. This includes monitoring breaches to contractual obligations and handling issues with vendors.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.4",
+        "answer": "yes",
+        "comment": "SLA performance information is provided at: https://cloud-status.elastic.co\n\nElastic also provides customers with Support Service subscription plans for Elastic Cloud. The Support Services provided to customers includes general assistance, development guidance, and production support regarding all aspects of the Elastic Cloud.\n\nCustomers are able to access the support team via a web portal, scheduled callback, or email. https://www.elastic.co/subscriptions",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.5",
+        "answer": "no",
+        "comment": "We do not currently provide security metrics to customers.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.6",
+        "answer": "yes",
+        "comment": "SLA performance information is provided at: https://cloud-status.elastic.co\n\nCustomers can also monitor their deployments by shipping logs to a separate monitoring deployment, as described in https://www.elastic.co/blog/monitoring-elastic-cloud-deployment-logs-and-metrics.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.7",
+        "answer": "yes",
+        "comment": 0,
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-07",
+        "question-id": "STA-07.8",
+        "answer": "yes",
+        "comment": "Legal are responsible for reviewing agreements annually or when these are expiring/ set for renewal.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-08",
+        "question-id": "STA-08.1",
+        "answer": "yes",
+        "comment": "A Third Party Information Risk Management process is in place where Elastic reviews the security practices of its third parties and negotiates security requirements into third party agreements. Annually re-reviewing critical third-parties is part of this process.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-08",
+        "question-id": "STA-08.2",
+        "answer": "yes",
+        "comment": "A Third Party Information Risk Management process is in place where Elastic reviews the security practices of its third parties and negotiates security requirements into third party agreements. Annually re-reviewing critical third-parties is part of this process.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-09",
+        "question-id": "STA-09.1",
+        "answer": "yes",
+        "comment": "A Third Party Information Risk Management process is in place where Elastic reviews the security practices of its third parties and negotiates security requirements into third party agreements. Annually re-reviewing critical third-parties is part of this process.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "STA-09",
+        "question-id": "STA-09.2",
+        "answer": "yes",
+        "comment": "Network penetration testing is performed at least annually. A remediation plan is developed and changes are implemented to remediate all critical and high vulnerabilities at a minimum.\n\nApplication penetration testing is performed at least annually. A remediation plan is developed and changes are implemented to remediate all critical and high vulnerabilities at a minimum.",
+        "infosec-function": "Risk Management",
+        "infosec-service": "Svc: Third Party Info Risk Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-01",
+        "question-id": "TVM-01.1",
+        "answer": "yes",
+        "comment": "Elastic has implemented the Elastic Endpoint Security solution within our environment to provide AV/AM capabilities.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-01",
+        "question-id": "TVM-01.2",
+        "answer": "yes",
+        "comment": "Security threat detection systems using signatures, lists, or behavioral patterns are updated automatically and on a continuous basis.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-02",
+        "question-id": "TVM-02.1",
+        "answer": "yes",
+        "comment": "Network vulnerability scans are performed at least annually. A remediation plan is developed and changes are implemented to remediate all critical and high vulnerabilities at a minimum.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-02",
+        "question-id": "TVM-02.2",
+        "answer": "yes",
+        "comment": "Application vulnerability scans are conducted at least monthly and application penetration testing is performed at least annually.\n\nA remediation plan is developed and changes are implemented to remediate all critical and high vulnerabilities at a minimum.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-02",
+        "question-id": "TVM-02.3",
+        "answer": "yes",
+        "comment": "Operating system-layer vulnerability scans are performed at least monthly.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-02",
+        "question-id": "TVM-02.4",
+        "answer": "yes",
+        "comment": "Network penetration testing is performed at least annually. This includes a vulnerability scan.\n\nApplication penetration testing is performed at least annually. This includes a vulnerability scan.\n\nElastic will share the executive summary of our latest penetration test upon request.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-02",
+        "question-id": "TVM-02.5",
+        "answer": "yes",
+        "comment": "Infrastructure supporting Elastic Cloud is patched regularly to ensure servers supporting the service are hardened against security threats as part of a defense-in-depth model.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-02",
+        "question-id": "TVM-02.6",
+        "answer": "yes",
+        "comment": "Elastic do not automatically upgrade Elastic Cloud deployments. Customers have the flexibility to upgrade to any available version on a per-deployment basis from the Elastic Cloud console.\n\nCustomers are notified of security vulnerabilities in Elastic products at: https://www.elastic.co/community/security\n\nIn the case that an identified weakness or vulnerability would have a material impact on customers, we may perform an additional communication advising customers to upgrade their deployments.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-03",
+        "question-id": "TVM-03.1",
+        "answer": "yes",
+        "comment": "Mobile code is not used in Elastic Cloud.\n\nThe use of mobile code in the form of custom Elasticsearch plugins is only available to Platinum level customers. Use of the plugin must be requested by the customer and specifically authorized by Elastic Support before being enabled, in which case it is enabled only for the specific deployment specified by the customer.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "TVM-03",
+        "question-id": "TVM-03.2",
+        "answer": "yes",
+        "comment": "Mobile code is not used in Elastic Cloud.\n\nThe use of mobile code in the form of custom Elasticsearch plugins is only available to Platinum level customers. Use of the plugin must be requested by the customer and specifically authorized by Elastic Support before being enabled, in which case it is enabled only for the specific deployment specified by the customer.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

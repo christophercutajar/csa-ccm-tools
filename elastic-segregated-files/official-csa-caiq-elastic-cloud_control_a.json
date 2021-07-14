@@ -1,0 +1,152 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-csa-caiq.xlsx"
+    },
+    "control-domains": [
+      {
+        "id": "AIS",
+        "title": "Application & Interface Security",
+        "controls": [
+          {
+            "id": "AIS-01",
+            "title": "Application Security",
+            "specification": "Applications and programming interfaces (APIs) shall be designed, developed, deployed, and tested in accordance with leading industry standards (e.g., OWASP for web applications) and adhere to applicable legal, statutory, or regulatory compliance obligations.",
+            "questions": [
+              {
+                "id": "AIS-01.1",
+                "content": "Do you use industry standards (i.e. OWASP Software Assurance Maturity Model, ISO 27034) to build in security for your Systems/Software Development Lifecycle (SDLC)?"
+              },
+              {
+                "id": "AIS-01.2",
+                "content": "Do you use an automated source code analysis tool to detect security defects in code prior to production?"
+              },
+              {
+                "id": "AIS-01.3",
+                "content": "Do you use manual source-code analysis to detect security defects in code prior to production?"
+              },
+              {
+                "id": "AIS-01.4",
+                "content": "Do you verify that all of your software suppliers adhere to industry standards for Systems/Software Development Lifecycle (SDLC) security?"
+              },
+              {
+                "id": "AIS-01.5",
+                "content": "(SaaS only) Do you review your applications for security vulnerabilities and address any issues prior to deployment to production?"
+              }
+            ]
+          },
+          {
+            "id": "AIS-02",
+            "title": "Customer Access Requirements",
+            "specification": "Prior to granting customers access to data, assets, and information systems, identified security, contractual, and regulatory requirements for customer access shall be addressed. ",
+            "questions": [
+              {
+                "id": "AIS-02.1",
+                "content": "Are all identified security, contractual, and regulatory requirements for customer access contractually addressed and remediated prior to granting customers access to data, assets, and information systems?"
+              },
+              {
+                "id": "AIS-02.2",
+                "content": "Are all requirements and trust levels for customers’ access defined and documented?"
+              }
+            ]
+          },
+          {
+            "id": "AIS-03",
+            "title": "Data Integrity",
+            "specification": "Data input and output integrity routines (i.e., reconciliation and edit checks) shall be implemented for application interfaces and databases to prevent manual or systematic processing errors, corruption of data, or misuse.",
+            "questions": [
+              {
+                "id": "AIS-03.1",
+                "content": "Does your data management policies and procedures require audits to verify data input and output integrity routines?"
+              },
+              {
+                "id": "AIS-03.2",
+                "content": "Are data input and output integrity routines (i.e. MD5/SHA checksums) implemented for application interfaces and databases to prevent manual or systematic processing errors or corruption of data?"
+              }
+            ]
+          },
+          {
+            "id": "AIS-04",
+            "title": "Data Security / Integrity",
+            "specification": "Policies and procedures shall be established and maintained in support of data security to include (confidentiality, integrity, and availability) across multiple system interfaces, jurisdictions, and business functions to prevent improper disclosure, alternation, or destruction.",
+            "questions": [
+              {
+                "id": "AIS-04.1",
+                "content": "Is your Data Security Architecture designed using an industry standard (e.g., CDSA, MULITSAFE, CSA Trusted Cloud Architectural Standard, FedRAMP, CAESARS)?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AAC",
+        "title": "Audit Assurance & Compliance",
+        "controls": [
+          {
+            "id": "AAC-01",
+            "title": "Audit Planning",
+            "specification": "Audit plans shall be developed and maintained to address business process disruptions. Auditing plans shall focus on reviewing the effectiveness of the implementation of security operations. All audit activities must be agreed upon prior to executing any audits.",
+            "questions": [
+              {
+                "id": "AAC-01.1",
+                "content": "Do you develop and maintain an agreed upon audit plan (e.g., scope, objective, frequency, resources,etc.) for reviewing the efficiency and effectiveness of implemented security controls?"
+              },
+              {
+                "id": "AAC-01.2",
+                "content": "Does your audit program take into account effectiveness of implementation of security operations?"
+              }
+            ]
+          },
+          {
+            "id": "AAC-02",
+            "title": "Independent Audits",
+            "specification": "Independent reviews and assessments shall be performed at least annually to ensure that the organization addresses nonconformities of established policies, standards, procedures, and compliance obligations.",
+            "questions": [
+              {
+                "id": "AAC-02.1",
+                "content": "Do you allow tenants to view your SOC2/ISO 27001 or similar third-party audit or certification reports?"
+              },
+              {
+                "id": "AAC-02.2",
+                "content": "Do you conduct network penetration tests of your cloud service infrastructure at least annually?"
+              },
+              {
+                "id": "AAC-02.3",
+                "content": "Do you conduct application penetration tests of your cloud infrastructure regularly as prescribed by industry best practices and guidance?"
+              },
+              {
+                "id": "AAC-02.4",
+                "content": "Do you conduct internal audits at least annually?"
+              },
+              {
+                "id": "AAC-02.5",
+                "content": "Do you conduct independent audits at least annually?"
+              },
+              {
+                "id": "AAC-02.6",
+                "content": "Are the results of the penetration tests available to tenants at their request?"
+              },
+              {
+                "id": "AAC-02.7",
+                "content": "Are the results of internal and external audits available to tenants at their request?"
+              }
+            ]
+          },
+          {
+            "id": "AAC-03",
+            "title": "Information System Regulatory Mapping",
+            "specification": "Organizations shall create and maintain a control framework which captures standards, regulatory, legal, and statutory requirements relevant for their business needs. The control framework shall be reviewed at least annually to ensure changes that could affect the business processes are reflected.",
+            "questions": [
+              {
+                "id": "AAC-03.1",
+                "content": "Do you have a program in place that includes the ability to monitor changes to the regulatory requirements in relevant jurisdictions, adjust your security program for changes to legal requirements, and ensure compliance with relevant regulatory requirements?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "sample"
+    },
+    "control-domains": [
+      {
+        "id": "AIS",
+        "title": "Application & Interface Security",
+        "controls": [
+          {
+            "id": "AIS-01",
+            "title": "Application Security",
+            "specification": "Applications and programming interfaces (APIs) shall be designed, developed, deployed, and tested in accordance with leading industry standards (e.g., OWASP for web applications) and adhere to applicable legal, statutory, or regulatory compliance obligations.",
+            "questions": [
+              {
+                "id": "AIS-01.1",
+                "content": "Do you use industry standards (i.e. OWASP Software Assurance Maturity Model, ISO 27034) to build in security for your Systems/Software Development Lifecycle (SDLC)?"
+              },
+              {
+                "id": "AIS-01.2",
+                "content": "Do you use an automated source code analysis tool to detect security defects in code prior to production?"
+              },
+              {
+                "id": "AIS-01.3",
+                "content": "Do you use manual source-code analysis to detect security defects in code prior to production?"
+              },
+              {
+                "id": "AIS-01.4",
+                "content": "Do you verify that all of your software suppliers adhere to industry standards for Systems/Software Development Lifecycle (SDLC) security?"
+              },
+              {
+                "id": "AIS-01.5",
+                "content": "(SaaS only) Do you review your applications for security vulnerabilities and address any issues prior to deployment to production?"
+              }
+            ]
+          },
+          {
+            "id": "AIS-02",
+            "title": "Customer Access Requirements",
+            "specification": "Prior to granting customers access to data, assets, and information systems, identified security, contractual, and regulatory requirements for customer access shall be addressed. ",
+            "questions": [
+              {
+                "id": "AIS-02.1",
+                "content": "Are all identified security, contractual, and regulatory requirements for customer access contractually addressed and remediated prior to granting customers access to data, assets, and information systems?"
+              },
+              {
+                "id": "AIS-02.2",
+                "content": "Are all requirements and trust levels for customers’ access defined and documented?"
+              }
+            ]
+          },
+          {
+            "id": "AIS-03",
+            "title": "Data Integrity",
+            "specification": "Data input and output integrity routines (i.e., reconciliation and edit checks) shall be implemented for application interfaces and databases to prevent manual or systematic processing errors, corruption of data, or misuse.",
+            "questions": [
+              {
+                "id": "AIS-03.1",
+                "content": "Does your data management policies and procedures require audits to verify data input and output integrity routines?"
+              },
+              {
+                "id": "AIS-03.2",
+                "content": "Are data input and output integrity routines (i.e. MD5/SHA checksums) implemented for application interfaces and databases to prevent manual or systematic processing errors or corruption of data?"
+              }
+            ]
+          },
+          {
+            "id": "AIS-04",
+            "title": "Data Security / Integrity",
+            "specification": "Policies and procedures shall be established and maintained in support of data security to include (confidentiality, integrity, and availability) across multiple system interfaces, jurisdictions, and business functions to prevent improper disclosure, alternation, or destruction.",
+            "questions": [
+              {
+                "id": "AIS-04.1",
+                "content": "Is your Data Security Architecture designed using an industry standard (e.g., CDSA, MULITSAFE, CSA Trusted Cloud Architectural Standard, FedRAMP, CAESARS)?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

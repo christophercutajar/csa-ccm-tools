@@ -1,0 +1,326 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "IVS-01",
+        "question-id": "IVS-01.1",
+        "answer": "yes",
+        "comment": "File integrity (host) monitoring as well as network intrusion detection capabilities are in place and centralized in our Elastic SIEM. Detections are enabled with automatic alerting to the InfoSec team and documented response procedures.",
+        "infosec-function": "Detections, Analytics and IR",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-01",
+        "question-id": "IVS-01.2",
+        "answer": "yes",
+        "comment": "Physical user access to audit logs is restricted by Elastic's hosting IAAS providers. Logical user access to audit logs are restricted by Elastic to a limited number of users on a need-to-know basis. Access to logs is part of our role based access control and privileged access management scope. A documented access request and functional leader approval are required prior to access being provisioned",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-01",
+        "question-id": "IVS-01.3",
+        "answer": "yes",
+        "comment": "Elastic has completed the SOC 2 Type 2 certification for Elasticsearch Service, including the security control requirements defined by the Cloud Security Alliance (CSA) as well as a HIPAA Attestation of compliance and ISO 27001 27017 and 27018 certifications. The report can be provided on request.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-01",
+        "question-id": "IVS-01.4",
+        "answer": "yes",
+        "comment": "Elastic uses the Elastic SIEM to centrally manage our logs. Additional information can be found at: https://www.elastic.co/security",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-01",
+        "question-id": "IVS-01.5",
+        "answer": "yes",
+        "comment": "Elastic uses the Elastic SIEM to centrally manage our logs. Automated monitoring and alerting is in place and we continually add new detection capabilities.. Additional information can be found at: https://www.elastic.co/security",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-02",
+        "question-id": "IVS-02.1",
+        "answer": "yes",
+        "comment": "Yes",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-02",
+        "question-id": "IVS-02.2",
+        "answer": "yes",
+        "comment": "Yes, all deployments are automated using managed machine images and infrastructure as code.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-02",
+        "question-id": "IVS-02.3",
+        "answer": "NA",
+        "comment": "Not Applicable to a SAAS product. We do not provide functionality for customers to host virtual machines or have visibility of the infrastructure layer where virtual machines are managed.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-03",
+        "question-id": "IVS-03.1",
+        "answer": "yes",
+        "comment": "Yes, NTP is used throughout the environment with a common time source.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-04",
+        "question-id": "IVS-04.1",
+        "answer": "yes",
+        "comment": "Automated processes are in place to manage and restrict resource allocation on individual systems and across the platform as a whole.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-04",
+        "question-id": "IVS-04.2",
+        "answer": "yes",
+        "comment": "Automated processes are in place to manage and restrict resource allocation on individual systems and across the platform as a whole.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-04",
+        "question-id": "IVS-04.3",
+        "answer": "yes",
+        "comment": "There are multiple monitoring systems in use for the in-scope Elastic Cloud systems, including a Performance and Capacity Monitoring System which takes into account current, projected, and anticipated capacity needs for all systems used to provide services to the tenants. System capacity is evaluated on an on-going basis and system changes are implemented to help ensure processing capacity can meet demand.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-04",
+        "question-id": "IVS-04.4",
+        "answer": "yes",
+        "comment": "There is comprehensive operational observability monitoring and alerting in place. Observed performance data is used to guide performance tuning and other improvements.\n\nWe make operational and incident data available publicy at: \n\nhttps://cloud-status.elastic.co\nhttps://status.elastic.co/history",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-05",
+        "question-id": "IVS-05.1",
+        "answer": "yes",
+        "comment": "Vulnerability assessment and scanning tools used within the Elastic Cloud environment are specifically designed to operate in virtualized environments. \n\nProcedures have been established and implemented to scan for vulnerabilities ",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-06",
+        "question-id": "IVS-06.1",
+        "answer": "NA",
+        "comment": "Not applicable to a SaaS offering.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-06",
+        "question-id": "IVS-06.2",
+        "answer": "yes",
+        "comment": "These are updated at least annually or when significant changes occur.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-06",
+        "question-id": "IVS-06.3",
+        "answer": "yes",
+        "comment": "Rules for access/connectivity between zones within the network are reviewed regularly. Firewall rulesets are reviewed at least semi-annually. All access to modify firewalls is implemented using RBAC.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-06",
+        "question-id": "IVS-06.4",
+        "answer": "yes",
+        "comment": "Firewall rulesets are reviewed at least semi-annually. In addition, all access to firewalls is implemented using RBAC.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-07",
+        "question-id": "IVS-07.1",
+        "answer": "yes",
+        "comment": "Operating system hardening is in place and automated based on a combination of standard baseline image builds and infrastructure as code. Coverage of security tooling is monitored.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-08",
+        "question-id": "IVS-08.1",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can create as many deployments as they require without involvement from Elastic. Individual deployments can be created with smaller capacity and lower cost for test use cases, or higher capacity and high availability for production use cases. All deployments can be scaled up or down and deleted as required.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-08",
+        "question-id": "IVS-08.2",
+        "answer": "NA",
+        "comment": "Not applicable to a SaaS offering. \n\nElastic Cloud customers can create as many deployments as they require without involvement from Elastic. Individual deployments can be created with smaller capacity and lower cost for test use cases, or higher capacity and high availability for production use cases. All deployments can be scaled up or down and deleted as required.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-08",
+        "question-id": "IVS-08.3",
+        "answer": "yes",
+        "comment": "Production and non-Production environments are separated at several layers, including underlying IaaS accounts and network connectivity.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-09",
+        "question-id": "IVS-09.1",
+        "answer": "yes",
+        "comment": "Firewalls are in place to filter unauthorized inbound traffic from the internet and deny any type of incoming network connection that is not explicitly authorized. Further network segmentation and firewalling is in place between logical zones within the environment.\n\nElastic Cloud customers can further restrict traffic to their deployments by using our traffic filtering functionality or by configuring PrivateLink.\n\nhttps://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-ip.html\nhttps://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-vpc.html\n",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-09",
+        "question-id": "IVS-09.2",
+        "answer": "yes",
+        "comment": "Firewalls are in place to filter unauthorized inbound traffic from the internet and deny any type of incoming network connection that is not explicitly authorized. Further network segmentation and firewalling is in place between logical zones within the environment.\n\nElastic Cloud customers can further restrict traffic to their deployments by using our traffic filtering functionality or by configuring PrivateLink.\n\nhttps://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-ip.html\nhttps://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-vpc.html",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-09",
+        "question-id": "IVS-09.3",
+        "answer": "yes",
+        "comment": "Firewalls are in place to filter unauthorized inbound traffic from the internet and deny any type of incoming network connection that is not explicitly authorized. Further network segmentation and firewalling is in place between logical zones within the environment.\n\nCustomer data is logically segmented in Elastic Cloud using containerization, which separates each tenant at multiple levels including processes, storage, memory, network and user accounts.\n\nElastic Cloud customers can further restrict traffic to their deployments by using our traffic filtering functionality or by configuring PrivateLink.\n\nhttps://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-ip.html\nhttps://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-vpc.html",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-09",
+        "question-id": "IVS-09.4",
+        "answer": "yes",
+        "comment": "Customer data is logically segmented in Elastic Cloud using containerization, which separates each tenant at multiple levels including processes, storage, memory, network and user accounts.\n\nCustomer deployments cannot communicate with one another without explicit trust rules being configured by the customer (e.g. to enable cross-cluster replication or cross-cluster search).",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-09",
+        "question-id": "IVS-09.5",
+        "answer": "yes",
+        "comment": "The production environments where all infrastructure is located are protected by firewalls. Firewall systems are in place to filter unauthorized inbound traffic from the internet and deny any type of incoming network connection that is not explicitly authorized.\n",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-10",
+        "question-id": "IVS-10.1",
+        "answer": "yes",
+        "comment": "Data in transit to, from and within the Elastic Cloud environment is encrypted using the open encryption standard TLS 1.2 with strong ciphers. TLS versions older than 1.2 are disabled.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-10",
+        "question-id": "IVS-10.2",
+        "answer": "NA",
+        "comment": "Not applicable to a SaaS offering.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-11",
+        "question-id": "IVS-11.1",
+        "answer": "yes",
+        "comment": "All access by Elastic personnel to the Elastic Cloud infrastructure is performed via an IPSec VPN with multi-factor authentication (MFA). Firewalls prevent any access from taking place without the VPN. Role based access control (RBAC) is in place following the principle of least privilege.\n\nAll access to the production environment is logged, monitored and audited at multiple levels. Access to tenant data is logged at a granular level, down to individual operating system commands or API calls that are attributable to an individual. Automatic alerting is in place, with documented response procedures for the InfoSec team to act on alerts.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-12",
+        "question-id": "IVS-12.1",
+        "answer": "NA",
+        "comment": "Not applicable. No wireless networks are used in the delivery of Elastic Cloud.\n\nElastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. Elastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-12",
+        "question-id": "IVS-12.2",
+        "answer": "NA",
+        "comment": "Not applicable. No wireless networks are used in the delivery of Elastic Cloud.\n\nElastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. Elastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-12",
+        "question-id": "IVS-12.3",
+        "answer": "NA",
+        "comment": "Not applicable. No wireless networks are used in the delivery of Elastic Cloud.\n\nElastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. Elastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-13",
+        "question-id": "IVS-13.1",
+        "answer": "yes",
+        "comment": "Our network architecture diagrams clearly identify high-risk environments and data flows that may have legal compliance impacts.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IVS-13",
+        "question-id": "IVS-13.2",
+        "answer": "yes",
+        "comment": "Elastic Cloud implements technical measures and applies defense-in-depth techniques such as DDOS prevention, packet and traffic analysis, and logging and monitoring with automated detection and alerting. Traffic throttling and black-holing may be deployed as part of incident response capabilities.",
+        "infosec-function": "Security Detection, Analytics, and Response",
+        "infosec-service": "Svc:  Security Detection",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "EKM-01",
+        "question-id": "EKM-01.1",
+        "answer": "yes",
+        "comment": "Key Management policies, standards or procedures are documented and maintained as Infrastructure-as-Code and/or as part of the operational documentation for each applicable component or service.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-02",
+        "question-id": "EKM-02.1",
+        "answer": "no",
+        "comment": "Full disk encryption is in place on each virtual server host. Each virtual server has a unique encryption key.\n\nIt is possible that multiple tenant deployments exist on the same virtual server. All tenants are separated by containerization that ensures separate logical storage volumes for each deployment, with no possibility to access data across tenants. \n\n",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-02",
+        "question-id": "EKM-02.2",
+        "answer": "yes",
+        "comment": "Elastic Cloud manages encryption keys on behalf of all tenants. We do not currently support a Bring Your Own Key model.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-02",
+        "question-id": "EKM-02.3",
+        "answer": "yes",
+        "comment": "Key Management policies, standards or procedures are documented and maintained as Infrastructure-as-Code and/or as part of the operational documentation for each applicable component or service.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-02",
+        "question-id": "EKM-02.4",
+        "answer": "yes",
+        "comment": "Key Management policies, standards or procedures are documented and maintained as Infrastructure-as-Code and/or as part of the operational documentation for each applicable component or service.\n\nKeys for data encryption at rest never leave the host where they are generated and are considered disposable. They are automatically generated whenever a virtual machine host is created or replaced.\n\nKey Management for encryption in the underlying IaaS services is automated using the Key Management System of the provider.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-02",
+        "question-id": "EKM-02.5",
+        "answer": "yes",
+        "comment": "Key Management for encryption in the underlying IaaS services is automated using the Key Management System of the provider.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-03",
+        "question-id": "EKM-03.1",
+        "answer": "yes",
+        "comment": "Data at rest for Elastic Cloud deployments is encrypted at rest using the aes-xts-plain64 algorithm (AES-256) and a minimum key length of 256 bits.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-03",
+        "question-id": "EKM-03.2",
+        "answer": "yes",
+        "comment": "Data at rest for Elastic Cloud deployments is encrypted at rest using the aes-xts-plain64 algorithm (AES-256) and a minimum key length of 256 bits.\n\nData in transit to, from and within the Elastic Cloud environment is encrypted using the open encryption standard TLS 1.2 with strong ciphers. TLS versions older than 1.2 are disabled.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-03",
+        "question-id": "EKM-03.3",
+        "answer": "yes",
+        "comment": "Key Management policies, standards or procedures are documented and maintained as Infrastructure-as-Code and/or as part of the operational documentation for each applicable component or service.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-04",
+        "question-id": "EKM-04.1",
+        "answer": "yes",
+        "comment": "Data at rest for Elastic Cloud deployments is encrypted at rest using the aes-xts-plain64 algorithm (AES-256) and a minimum key length of 256 bits.\n\nData in transit to, from and within the Elastic Cloud environment is encrypted using the open encryption standard TLS 1.2 with strong ciphers. TLS versions older than 1.2 are disabled.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-04",
+        "question-id": "EKM-04.2",
+        "answer": "yes",
+        "comment": "Key Management for encryption in the underlying IaaS services is automated using the Key Management System of the provider.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-04",
+        "question-id": "EKM-04.3",
+        "answer": "yes",
+        "comment": "Key Management for encryption in the underlying IaaS services is automated using the Key Management System of the provider.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "EKM-04",
+        "question-id": "EKM-04.4",
+        "answer": "yes",
+        "comment": "Yes, and all accesses to keys are logged and monitored.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

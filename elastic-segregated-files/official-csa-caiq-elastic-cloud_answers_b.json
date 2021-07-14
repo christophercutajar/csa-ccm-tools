@@ -1,0 +1,245 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "BCR-01",
+        "question-id": "BCR-01.1",
+        "answer": "yes",
+        "comment": "A Business Continuity Standard and documented disaster recovery (DR) plan is in place for Elastic Cloud and tested annually to ensure continued effectiveness.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-01",
+        "question-id": "BCR-01.2",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers have complete control to select the cloud (IAAS) provider and geographic region on a per-deployment basis. \n\nSupport for new regions in each IAAS provider is added regularly. It is possible to configure cross-cluster replication across regions and providers.\n\nThe currently available regions for each provider can be found at: https://www.elastic.co/guide/en/cloud/current/ec-reference-regions.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-01",
+        "question-id": "BCR-01.3",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers have complete control to select the cloud (IAAS) provider and geographic region on a per-deployment basis.\n\nHigh Availability is achieved within the selected region by hosting the deployment in multiple availability zones. This is configurable by the customer and enabled by default. Elastic recommends that Production deployments are in at least two availability zones.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-01",
+        "question-id": "BCR-01.4",
+        "answer": "yes",
+        "comment": "Our observability monitoring includes upstream providers.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-01",
+        "question-id": "BCR-01.5",
+        "answer": "yes",
+        "comment": "Current and historical operational redundancy summaries are available at:\n\nhttps://cloud-status.elastic.co",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-01",
+        "question-id": "BCR-01.6",
+        "answer": "yes",
+        "comment": "High Availability is achieved within a region by hosting the deployment in multiple availability zones. \n\nThis is configurable by the customer and enabled by default. Elastic recommends that Production deployments are in at least two availability zones.\n\nTenant triggered failover or high-availability across regions could be configured by the customer using Cross-Cluster Replication.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-01",
+        "question-id": "BCR-01.7",
+        "answer": "yes",
+        "comment": "Access to in-scope system components is determined by role and based on least privilege.\n\nAll access is terminated within 24 hours of an employee leaving the company and tracked via a ticketing system.\n\nIn addition, quarterly user access reviews are performed by functional leaders for the in-scope system components to ensure that access is restricted appropriately. Access removal is tracked to remove access as necessary in a timely manner.\n\nAuthorized Elastic employees are only provided access to tenant data where this is required to help deliver the service.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-02",
+        "question-id": "BCR-02.1",
+        "answer": "yes",
+        "comment": "A Business Continuity Standard and documented disaster recovery (DR) plan is in place for Elastic Cloud and tested annually to ensure continued effectiveness.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-03",
+        "question-id": "BCR-03.1",
+        "answer": "no",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-03",
+        "question-id": "BCR-03.2",
+        "answer": "yes",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-04",
+        "question-id": "BCR-04.1",
+        "answer": "yes",
+        "comment": "Extensive documentation, including installation and operating procedures, security standards and build documentation is maintained and made available to authorized personnel.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-05",
+        "question-id": "BCR-05.1",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. \n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/\nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-06",
+        "question-id": "BCR-06.1",
+        "answer": "no",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. \n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/\nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-07",
+        "question-id": "BCR-07.1",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-07",
+        "question-id": "BCR-07.2",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-08",
+        "question-id": "BCR-08.1",
+        "answer": "yes",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. All physical controls are provided by the IaaS provider.\n\nElastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/\nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-09",
+        "question-id": "BCR-09.1",
+        "answer": "yes",
+        "comment": "These concepts and standards are used in the development and maintanence of our Business Continuity Standard and Disaster Recovery plans.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-09",
+        "question-id": "BCR-09.2",
+        "answer": "yes",
+        "comment": "SLA performance information is provided at: https://cloud-status.elastic.co\n\nCustomers can also monitor their deployments by shipping logs to a separate monitoring deployment, as described in https://www.elastic.co/blog/monitoring-elastic-cloud-deployment-logs-and-metrics.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-10",
+        "question-id": "BCR-10.1",
+        "answer": "yes",
+        "comment": "Policies and procedures are established are made available for all personnel to adequately support service operations roles.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-11",
+        "question-id": "BCR-11.1",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can use Index Lifecycle Management to manage retention schedules and migration to different data tiers at a granular level.\n\nFor more details see: https://www.elastic.co/guide/en/elasticsearch/reference/current/set-up-lifecycle-policy.html \n\nElastic Cloud customers can delete data at their discretion and at any time without Elastic involvement.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-11",
+        "question-id": "BCR-11.2",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can use Index Lifecycle Management to manage retention schedules and migration to different data tiers at a granular level.\n\nFor more details see: https://www.elastic.co/guide/en/elasticsearch/reference/current/set-up-lifecycle-policy.html \n\nElastic Cloud customers can delete data at their discretion and at any time without Elastic involvement.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-11",
+        "question-id": "BCR-11.3",
+        "answer": "yes",
+        "comment": "Backup snapshots are taken on a per-deployment basis and are configurable by the customer. The default snapshot interval is 30 minutes. Customers can restore data to the same or a different deployment on-demand and without involvement from Elastic.\n\nHigh Availability is achieved within the selected region by hosting the deployment in multiple availability zones. This is configurable by the customer and enabled by default. Elastic recommends that Production deployments are in at least two availability zones.\n\nElastic Cloud customers have access to delete data at thier own discretion and at any time without the involvement of Elastic.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-11",
+        "question-id": "BCR-11.4",
+        "answer": "yes",
+        "comment": "Elastic cloud uses the virtualized infrastructure provided by the underlying cloud providers.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-11",
+        "question-id": "BCR-11.5",
+        "answer": "yes",
+        "comment": "Virtual machines are not applicable in a SAAS product, but we do make this capability availalbe for tenant deployments of Elastic Cloud.\n\nBackup snapshots are taken on a per-deployment basis and are configurable by the customer. The default snapshot interval is 30 minutes. Customers can restore data to the same or a different deployment on-demand and without involvement from Elastic.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-11",
+        "question-id": "BCR-11.6",
+        "answer": "yes",
+        "comment": "Backup snapshots are taken on a per-deployment basis and are configurable by the customer. The default snapshot interval is 30 minutes. Customers can restore data to the same or a different deployment on-demand and without involvement from Elastic.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "BCR-11",
+        "question-id": "BCR-11.7",
+        "answer": "yes",
+        "comment": "Backup and redundancy mechanisms are tested at least annually.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

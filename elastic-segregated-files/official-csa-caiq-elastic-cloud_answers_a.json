@@ -1,0 +1,191 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "AAC-01",
+        "question-id": "AAC-01.1",
+        "answer": "yes",
+        "comment": "Annual security reviews/ audits are performed by independent third parties.\n\nElastic has completed the SOC 2 Type 2 certification, including the security control requirements defined by the Cloud Security Alliance (CSA), HIPAA Attestation of Compliance, and ISO 27001 27017 and 27018 certifications for Elastic Cloud.\n\nAn up to date list of our certifications and attestations is available at https://www.elastic.co/security-and-compliance. \n\nOur code is free and open and frequently reviewed by members of the open source community. We also run a bug bounty program that rewards independent researchers who identify vulnerabilities in our products.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-01",
+        "question-id": "AAC-01.2",
+        "answer": "yes",
+        "comment": "Our audit program and certifications take into account the effectiveness of security operations and progress against security objectives.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-02",
+        "question-id": "AAC-02.1",
+        "answer": "yes",
+        "comment": "We are happy to share our current SOC 2 Type 2 report, which includes the CSA STAR CCM criteria, upon request.\n\nOur ISO certificates can be found on our public site at: https://www.elastic.co/security-and-compliance\n\nWe authorized as FedRAMP Moderate and listed on the FedRAMP Marketplace: https://marketplace.fedramp.gov/#!/product/elastic-cloud?sort=productName&productNameSearch=elastic",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-02",
+        "question-id": "AAC-02.2",
+        "answer": "yes",
+        "comment": "Elastic performs penetration testing on an annual basis. Both Network and Application Security controls are tested.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-02",
+        "question-id": "AAC-02.3",
+        "answer": "yes",
+        "comment": "Elastic performs penetration testing on an annual basis. Both Network and Application Security controls are tested.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-02",
+        "question-id": "AAC-02.4",
+        "answer": "yes",
+        "comment": "Internal audits/ reviews are performed by the Internal Audit team, as well as the Information Security team which is responsible for security assurance, engineering and risk and compliance activities for the company.\n",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-02",
+        "question-id": "AAC-02.5",
+        "answer": "yes",
+        "comment": "Annual security reviews/ audits are performed by independent third parties.\n\nElastic has completed the SOC 2 Type 2 certification, including the security control requirements defined by the Cloud Security Alliance (CSA), HIPAA Attestation of Compliance, and ISO 27001 27017 and 27018 certifications for Elastic Cloud.\n\nAn up to date list of our certifications and attestations is available at https://www.elastic.co/security-and-compliance. \n\nOur code is free and open and frequently reviewed by members of the open source community. We also run a bug bounty program that rewards independent researchers who identify vulnerabilities in our products. \n\n",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-02",
+        "question-id": "AAC-02.6",
+        "answer": "yes",
+        "comment": "Elastic performs penetration testing on an annual basis. Both Network and Application Security controls are tested.\n\nElastic will share the executive summary of our latest penetration test upon request.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-02",
+        "question-id": "AAC-02.7",
+        "answer": "yes",
+        "comment": "We are happy to share our current SOC 2 Type 2 report, which includes the CSA STAR CCM criteria, upon request.\n\nOur ISO certificates can be found on our public site at: https://www.elastic.co/security-and-compliance\n\nWe authorized as FedRAMP Moderate and listed on the FedRAMP Marketplace: https://marketplace.fedramp.gov/#!/product/elastic-cloud?sort=productName&productNameSearch=elastic",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AAC-03",
+        "question-id": "AAC-03.1",
+        "answer": "yes",
+        "comment": "Elastic has an extensive security program, led by Elastic's CISO and supported by the company's Information Security staff.\n\nThe program includes the ability to monitor changes to the regulatory requirements in relevant jurisdictions, adjusting the security program for changes to legal requirements, and ensuring compliance with relevant regulatory requirements.\n\nElastic has a cross-functional privacy team that reports to the Chief Information Security Officer and the Chief Legal Officer. The Chief Legal Officer is ultimately accountable for compliance with applicable privacy law.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Customer Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-01",
+        "question-id": "AIS-01.1",
+        "answer": "yes",
+        "comment": "A formal systems development life cycle (SDLC) methodology is in place. This is the overall process of developing, implementing, and retiring information systems through a multistep process from initiation, analysis, design, implementation, and maintenance to disposal. The process consists of a series of defined steps or phases where information security must be integrated into the SDLC to ensure appropriate protection for the Elastic information that the system transmits, processes, and stores.\n\nThis internal SDLC program that is built around our unique open source development model. We ensure our developers are aware of common security problems, how to identify and resolve them, as well as how to report such problems to the appropriate teams for remiation and verification. Changes are vetted by multiple security aware reviewers. We have programs in place to understand third party components, track known issues in them as well as updating the components as needed. Releases receive scrutiny to identify any issues in the supply chain and product itself. We are a CVE CNA and publish security alerts as part of the overall lifecycle program. We regularly conduct 3rd party code reviews of our products, have a private bug bounty program, and accept external reports from anyone regarding the security of our software.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-01",
+        "question-id": "AIS-01.2",
+        "answer": "yes",
+        "comment": "Deployment to production is controlled via Change Management.\n- Changes are branches in repository, version controlled.\n- All changes are automatically tested by a pipeline of tools including security checks.\n- All testing is registered in GitHub and must pass before testing is complete.\n- To merge new code into production, needs approval by another developer/engineer.\n",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-01",
+        "question-id": "AIS-01.3",
+        "answer": "yes",
+        "comment": "A code review process in place.\n\nThe software and cloud infrastructure change management process requires that software and cloud infrastructure change requests are: \n● Authorized.\n● Formally documented\n● Peer reviewed \n● Tested prior to migration to production\n● Reviewed by management (where required) to make sure that the change is appropriate, followed the change management process, and was scheduled for release appropriately.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-01",
+        "question-id": "AIS-01.4",
+        "answer": "yes",
+        "comment": "As part of the Elastic Third Party Vendor Review process, Elastic reviews the security practices of its third parties to ensure controls such as this are in place.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-01",
+        "question-id": "AIS-01.5",
+        "answer": "yes",
+        "comment": "Releases receive scrutiny to identify any issues in the supply chain and product itself. We are a CVE CNA and publish security alerts as part of the overall lifecycle program. We regularly conduct 3rd party code reviews of our products, have a bug bounty program, and accept external reports from anyone regarding the security of our software.\n\nElastic source code is available and open for review by community and customers alike. It is available at https://www.github.com/elastic.\n\nElastic maintains a documented public process for submitting vulnerabilities and security-related issues at https://www.elastic.co/community/security. The company follows a documented (internal) process on responding to vulnerability and other security-related reports.\n\nThe company has created a team of the most security-knowledgeable people on each product team who collaborate, evaluate and respond to reports in a private mailing list. The company also publishes vulnerabilities via Bugtraq and also public announcements at https://discuss.elastic.co/c/security-announcements.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-02",
+        "question-id": "AIS-02.1",
+        "answer": "yes",
+        "comment": "Before accessing Elastic Cloud, customers are required to accept our Terms of Agreeement and Privacy Statement.\n\nhttps://www.elastic.co/legal/elastic-cloud-account-terms\nhttps://www.elastic.co/legal/privacy-statement",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-02",
+        "question-id": "AIS-02.2",
+        "answer": "yes",
+        "comment": "Requirements and trust levels are defined contractually and via the Terms of Agreeement and Privacy Statement.\n\nhttps://www.elastic.co/legal/elastic-cloud-account-terms\nhttps://www.elastic.co/legal/privacy-statement",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-03",
+        "question-id": "AIS-03.1",
+        "answer": "yes",
+        "comment": "All access to the production environment is logged, monitored and audited at multiple levels. Access to tenant data is logged at a granular level, down to individual operating system commands or API calls that are attributable to an individual. Automatic alerting is in place, with documented response procedures for the InfoSec team to act on alerts.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-03",
+        "question-id": "AIS-03.2",
+        "answer": "yes",
+        "comment": "Elastic uses data integrity controls to ensure that data inputs to application systems are accurate and within the expected range of values.\n\nWhere appropriate, data inputs are sanitized or otherwise rendered safe before being inputted to an application system.\n\nInput and output integrity routines such as SHA hashes and checksums are used throughout our platform and application code to prevent processing errors and corruption.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "AIS-04",
+        "question-id": "AIS-04.1",
+        "answer": "yes",
+        "comment": "Elastic maintains and regularly updates the Information Security Program Policy which establishes the mandate for Information Security across the organization. The policy and supporting standards address the purpose, scope, roles and responsibilities, requirements, and coordination among the teams involved in delivering Elastic Cloud.\n\nOur security program and architecture are aligned wih and certified against industry standards including ISO 27001, CSA Star, SOC2 and FedRAMP.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

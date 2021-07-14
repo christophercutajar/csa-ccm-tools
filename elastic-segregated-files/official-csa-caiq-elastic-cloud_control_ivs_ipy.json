@@ -1,0 +1,329 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-csa-caiq-elastic.xlsx"
+    },
+    "control-domains": [
+      {
+        "id": "IVS",
+        "title": "Infrastructure & Virtualization Security",
+        "controls": [
+          {
+            "id": "IVS-01",
+            "title": "Audit Logging / Intrusion Detection",
+            "specification": "Higher levels of assurance are required for protection, retention, and lifecycle management of audit logs, adhering to applicable legal, statutory, or regulatory compliance obligations and providing unique user access accountability to detect potentially suspicious network behaviors and/or file integrity anomalies, and to support forensic investigative capabilities in the event of a security breach.",
+            "questions": [
+              {
+                "id": "IVS-01.1",
+                "content": "Are file integrity (host) and network intrusion detection (IDS) tools implemented to help facilitate timely detection, investigation by root cause analysis, and response to incidents?"
+              },
+              {
+                "id": "IVS-01.2",
+                "content": "Is physical and logical user access to audit logs restricted to authorized personnel?"
+              },
+              {
+                "id": "IVS-01.3",
+                "content": "Can you provide evidence that due diligence mapping of regulations and standards to your controls/architecture/processes has been performed?"
+              },
+              {
+                "id": "IVS-01.4",
+                "content": "Are audit logs centrally stored and retained?"
+              },
+              {
+                "id": "IVS-01.5",
+                "content": "Are audit logs reviewed on a regular basis for security events (e.g., with automated tools)?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-02",
+            "title": "Change Detection",
+            "specification": "The provider shall ensure the integrity of all virtual machine images at all times. Any changes made to virtual machine images must be logged and an alert raised regardless of their running state (e.g., dormant, off, or running). The results of a change or move of an image and the subsequent validation of the image's integrity must be immediately available to customers through electronic methods (e.g., portals or alerts).",
+            "questions": [
+              {
+                "id": "IVS-02.1",
+                "content": "Do you log and alert any changes made to virtual machine images regardless of their running state (e.g., dormant, off or running)?"
+              },
+              {
+                "id": "IVS-02.2",
+                "content": "Does the virtual machine management infrastructure include a tamper audit or software integrity function to detect changes to the build/configuration of the virtual machine?"
+              },
+              {
+                "id": "IVS-02.3",
+                "content": "Are changes made to virtual machines, or moving of an image and subsequent validation of the image's integrity, made immediately available to customers through electronic methods (e.g., portals or alerts)?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-03",
+            "title": "Clock Synchronization",
+            "specification": "A reliable and mutually agreed upon external time source shall be used to synchronize the system clocks of all relevant information processing systems to facilitate tracing and reconstitution of activity timelines.",
+            "questions": [
+              {
+                "id": "IVS-03.1",
+                "content": "Do you use a synchronized time-service protocol (e.g., NTP) to ensure all systems have a common time reference?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-04",
+            "title": "Capacity / Resource Planning",
+            "specification": "The availability, quality, and adequate capacity and resources shall be planned, prepared, and measured to deliver the required system performance in accordance with legal, statutory, and regulatory compliance obligations. Projections of future capacity requirements shall be made to mitigate the risk of system overload.",
+            "questions": [
+              {
+                "id": "IVS-04.1",
+                "content": "Do you provide documentation regarding what levels of system (e.g., network, storage, memory, I/O, etc.) oversubscription you maintain and under what circumstances/scenarios?"
+              },
+              {
+                "id": "IVS-04.2",
+                "content": "Do you restrict use of the memory oversubscription capabilities present in the hypervisor?"
+              },
+              {
+                "id": "IVS-04.3",
+                "content": "Does your system's capacity requirements take into account current, projected, and anticipated capacity needs for all systems used to provide services to the tenants?"
+              },
+              {
+                "id": "IVS-04.4",
+                "content": "Is system performance monitored and tuned in order to continuously meet regulatory, contractual, and business requirements for all the systems used to provide services to the tenants?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-05",
+            "title": "Management - Vulnerability Management",
+            "specification": "Implementers shall ensure that the security vulnerability assessment tools or services accommodate the virtualization technologies used (e.g., virtualization aware).",
+            "questions": [
+              {
+                "id": "IVS-05.1",
+                "content": "Do security vulnerability assessment tools or services accommodate the virtualization technologies being used (e.g., virtualization aware)?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-06",
+            "title": "Network Security",
+            "specification": "Network environments and virtual instances shall be designed and configured to restrict and monitor traffic between trusted and untrusted connections. These configurations shall be reviewed at least annually, and supported by a documented justification for use for all allowed services, protocols, ports, and compensating controls.",
+            "questions": [
+              {
+                "id": "IVS-06.1",
+                "content": "For your IaaS offering, do you provide customers with guidance on how to create a layered security architecture equivalence using your virtualized solution?"
+              },
+              {
+                "id": "IVS-06.2",
+                "content": "Do you regularly update network architecture diagrams that include data flows between security domains/zones?"
+              },
+              {
+                "id": "IVS-06.3",
+                "content": "Do you regularly review for appropriateness the allowed access/connectivity (e.g., firewall rules) between security domains/zones within the network?"
+              },
+              {
+                "id": "IVS-06.4",
+                "content": "Are all firewall access control lists documented with business justification?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-07",
+            "title": "OS Hardening and Base Controls",
+            "specification": "Each operating system shall be hardened to provide only necessary ports, protocols, and services to meet business needs and have in place supporting technical controls such as: antivirus, file integrity monitoring, and logging as part of their baseline operating build standard or template.",
+            "questions": [
+              {
+                "id": "IVS-07.1",
+                "content": "Are operating systems hardened to provide only the necessary ports, protocols, and services to meet business needs using technical controls (e.g., antivirus, file integrity monitoring, and logging) as part of their baseline build standard or template?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-08",
+            "title": "Production / Non-Production Environments",
+            "specification": "Production and non-production environments shall be separated to prevent unauthorized access or changes to information assets. Separation of the environments may include: stateful inspection firewalls, domain/realm authentication sources, and clear segregation of duties for personnel accessing these environments as part of their job duties.",
+            "questions": [
+              {
+                "id": "IVS-08.1",
+                "content": "For your SaaS or PaaS offering, do you provide tenants with separate environments for production and test processes?"
+              },
+              {
+                "id": "IVS-08.2",
+                "content": "For your IaaS offering, do you provide tenants with guidance on how to create suitable production and test environments?"
+              },
+              {
+                "id": "IVS-08.3",
+                "content": "Do you logically and physically segregate production and non-production environments?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-09",
+            "title": "Segmentation",
+            "specification": "Multi-tenant organizationally-owned or managed (physical and virtual) applications, and infrastructure system and network components, shall be designed, developed, deployed, and configured such that provider and customer (tenant) user access is appropriately segmented from other tenant users, based on the following considerations:\n • Established policies and procedures\n • Isolation of business critical assets and/or sensitive user data and sessions that mandate stronger internal controls and high levels of assurance\n • Compliance with legal, statutory, and regulatory compliance obligations",
+            "questions": [
+              {
+                "id": "IVS-09.1",
+                "content": "Are system and network environments protected by a firewall or virtual firewall to ensure business and customer security requirements?"
+              },
+              {
+                "id": "IVS-09.2",
+                "content": "Are system and network environments protected by a firewall or virtual firewall to ensure compliance with legal, regulatory and contractual requirements?"
+              },
+              {
+                "id": "IVS-09.3",
+                "content": "Have you implemented the necessary measures for the appropriate isolation and segmentation of tenants' access to infrastructure system and network components, in adherence to established policies, legal, statutory, and regulatory compliance obligations?"
+              },
+              {
+                "id": "IVS-09.4",
+                "content": "Do you have the ability to logically segment or encrypt customer data such that data may be produced for a single tenant only, without inadvertently accessing another tenant's data?"
+              },
+              {
+                "id": "IVS-09.5",
+                "content": "Are system and network environments protected by a firewall or virtual firewall to ensure protection and isolation of sensitive data?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-10",
+            "title": "VM Security - Data Protection",
+            "specification": "Secured and encrypted communication channels shall be used when migrating physical servers, applications, or data to virtualized servers and, where possible, shall use a network segregated from production-level networks for such migrations.",
+            "questions": [
+              {
+                "id": "IVS-10.1",
+                "content": "Are secured and encrypted communication channels used when migrating physical servers, applications, or data to virtual servers?"
+              },
+              {
+                "id": "IVS-10.2",
+                "content": "Do you use a network segregated from production-level networks when migrating physical servers, applications, or data to virtual servers?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-11",
+            "title": "VMM Security - Hypervisor Hardening",
+            "specification": "Access to all hypervisor management functions or administrative consoles for systems hosting virtualized systems shall be restricted to personnel based upon the principle of least privilege and supported through technical controls (e.g., two-factor authentication, audit trails, IP address filtering, firewalls, and TLS encapsulated communications to the administrative consoles).",
+            "questions": [
+              {
+                "id": "IVS-11.1",
+                "content": "Do you restrict personnel access to all hypervisor management functions or administrative consoles for systems hosting virtualized systems based on the principle of least privilege and supported through technical controls (e.g., two-factor authentication, audit trails, IP address filtering, firewalls and TLS-encapsulated communications to the administrative consoles)?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-12",
+            "title": "Wireless Security",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, to protect wireless network environments, including the following:\n • Perimeter firewalls implemented and configured to restrict unauthorized traffic\n • Security settings enabled with strong encryption for authentication and transmission, replacing vendor default settings (e.g., encryption keys, passwords, and SNMP community strings)\n • User access to wireless network devices restricted to authorized personnel\n • The capability to detect the presence of unauthorized (rogue) wireless network devices for a timely disconnect from the network",
+            "questions": [
+              {
+                "id": "IVS-12.1",
+                "content": "Are policies and procedures established and mechanisms configured and implemented to protect the wireless network environment perimeter and to restrict unauthorized wireless traffic?"
+              },
+              {
+                "id": "IVS-12.2",
+                "content": "Are policies and procedures established and mechanisms implemented to ensure wireless security settings are enabled with strong encryption for authentication and transmission, replacing vendor default settings (e.g., encryption keys, passwords, SNMP community strings)?"
+              },
+              {
+                "id": "IVS-12.3",
+                "content": "Are policies and procedures established and mechanisms implemented to protect wireless network environments and detect the presence of unauthorized (rogue) network devices for a timely disconnect from the network?"
+              }
+            ]
+          },
+          {
+            "id": "IVS-13",
+            "title": "Network Architecture",
+            "specification": "Network architecture diagrams shall clearly identify high-risk environments and data flows that may have legal compliance impacts. Technical measures shall be implemented and shall apply defense-in-depth techniques (e.g., deep packet analysis, traffic throttling, and black-holing) for detection and timely response to network-based attacks associated with anomalous ingress or egress traffic patterns (e.g., MAC spoofing and ARP poisoning attacks) and/or distributed denial-of-service (DDoS) attacks.",
+            "questions": [
+              {
+                "id": "IVS-13.1",
+                "content": "Do your network architecture diagrams clearly identify high-risk environments and data flows that may have legal compliance impacts?"
+              },
+              {
+                "id": "IVS-13.2",
+                "content": "Do you implement technical measures and apply defense-in-depth techniques (e.g., deep packet analysis, traffic throttling and black-holing) for detection and timely response to network-based attacks associated with anomalous ingress or egress traffic patterns (e.g., MAC spoofing and ARP poisoning attacks) and/or distributed denial-of-service (DDoS) attacks?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IPY",
+        "title": "Interoperability & Portability",
+        "controls": [
+          {
+            "id": "IPY-01",
+            "title": "APIs",
+            "specification": "The provider shall use open and published APIs to ensure support for interoperability between components and to facilitate migrating applications.",
+            "questions": [
+              {
+                "id": "IPY-01.1",
+                "content": "Do you publish a list of all APIs available in the service and indicate which are standard and which are customized?"
+              }
+            ]
+          },
+          {
+            "id": "IPY-02",
+            "title": "Data Request",
+            "specification": "All structured and unstructured data shall be available to the customer and provided to them upon request in an industry-standard format (e.g., .doc, .xls, .pdf, logs, and flat files).",
+            "questions": [
+              {
+                "id": "IPY-02.1",
+                "content": "Is unstructured customer data available on request in an industry-standard format (e.g., .doc, .xls, or .pdf)?"
+              }
+            ]
+          },
+          {
+            "id": "IPY-03",
+            "title": "Policy & Legal",
+            "specification": "Policies, procedures, and mutually-agreed upon provisions and/or terms shall be established to satisfy customer (tenant) requirements for service-to-service application (API) and information processing interoperability, and portability for application development and information exchange, usage, and integrity persistence.",
+            "questions": [
+              {
+                "id": "IPY-03.1",
+                "content": "Do you provide policies and procedures (i.e. service level agreements) governing the use of APIs for interoperability between your service and third-party applications?"
+              },
+              {
+                "id": "IPY-03.2",
+                "content": "If using virtual infrastructure, do you allow virtual machine images to be downloaded and ported to a new cloud provider?"
+              },
+              {
+                "id": "IPY-03.3",
+                "content": "Do you provide policies and procedures (i.e. service level agreements) governing the migration of application data to and from your service?"
+              }
+            ]
+          },
+          {
+            "id": "IPY-04",
+            "title": "Standardized Network Protocols",
+            "specification": "The provider shall use secure (e.g., non-clear text and authenticated) standardized network protocols for the import and export of data and to manage the service, and shall make available a document to consumers (tenants) detailing the relevant interoperability and portability standards that are involved.",
+            "questions": [
+              {
+                "id": "IPY-04.1",
+                "content": "Is data import, data export, and service management be conducted over secure (e.g., non-clear text and authenticated), industry accepted standardized network protocols?"
+              },
+              {
+                "id": "IPY-04.2",
+                "content": "Do you provide consumers (tenants) with documentation detailing the relevant interoperability and portability network protocol standards that are involved?"
+              }
+            ]
+          },
+          {
+            "id": "IPY-05",
+            "title": "Virtualization",
+            "specification": "The provider shall use an industry-recognized virtualization platform and standard virtualization formats (e.g., OVF) to help ensure interoperability, and shall have documented custom changes made to any hypervisor in use, and all solution-specific virtualization hooks, available for customer review.",
+            "questions": [
+              {
+                "id": "IPY-05.1",
+                "content": "Do you use an industry-recognized virtualization platform and standard virtualization formats (e.g., OVF) to help ensure interoperability?"
+              },
+              {
+                "id": "IPY-05.2",
+                "content": "If using virtual infrastructure, are machine images made available to the customer in a way that would allow the customer to replicate those images in their own off-site storage location?"
+              },
+              {
+                "id": "IPY-05.3",
+                "content": "Do you have documented custom changes made to any hypervisor in use, and all solution-specific virtualization hooks available for customer review?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

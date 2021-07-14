@@ -1,0 +1,461 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "IAM-01",
+        "question-id": "IAM-01.1",
+        "answer": "yes",
+        "comment": "Privileged access to system components is restricted to authorized users with a business need. Access to such system components requires a documented access request and functional leader approval prior to access being provisioned. Access requires multi-factor authentication (MFA). Access and activity is logged and monitored for all users. ",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-01",
+        "question-id": "IAM-01.2",
+        "answer": "yes",
+        "comment": "All access by Elastic employees to the production environment is logged, monitored and audited at multiple levels. Access to tenant data is logged at a granular level, down to individual operating system commands or API calls that are attributable to an individual. Automatic alerting is in place, with documented response procedures for the InfoSec team to act on alerts.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-02",
+        "question-id": "IAM-02.1",
+        "answer": "yes",
+        "comment": "Formal procedures are documented in Elastic's Access Control standard for the revocation of access that is no longer needed.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-02",
+        "question-id": "IAM-02.2",
+        "answer": "yes",
+        "comment": "All internal users connecting to the network must have a unique username and password. Privileged access to production systems and supporting tools is only allowed through a VPN protected with MFA. VPN accounts provide access to internal systems based on a role-based system. Internal users are provisioned based on a defined user access management process based on Role Based Access Control following the principle of least privilege.\n\nWe manage and store the identity of all personnel who have network access including their level of access. Access requires a documented access request and functional leader approval prior to access being provisioned. ",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-02",
+        "question-id": "IAM-02.3",
+        "answer": "yes",
+        "comment": "Role based access control is in place and supported by automated provisioning/deprovisioning systems that are integrated with the Human Resources Information System (HRIS).",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-02",
+        "question-id": "IAM-02.4",
+        "answer": "yes",
+        "comment": "Segmentation is in place at multiple levels throughout the platform. Customer data is logically segmented in Elastic Cloud using containerization, which separates each tenant at multiple levels including processes, storage, memory, network and user accounts.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-02",
+        "question-id": "IAM-02.5",
+        "answer": "yes",
+        "comment": "All access by Elastic employees to the production environment is authenticated, authorized and audited for accountability. \n\nAll internal users connecting to the network must have a unique username and password. Privileged access to production systems and supporting tools is only allowed through a VPN protected with MFA. VPN accounts provide access to internal systems based on a role-based system. Users are provisioned based on a defined user access management process supported by automation.\n\nAccess to tenant data is logged at a granular level, down to individual operating system commands or API calls that are attributable to an individual. Automatic alerting is in place, with documented response procedures for the InfoSec team to act on alerts.\n\nQuarterly user access reviews are performed by functional leaders for the in-scope system components to ensure that access is restricted appropriately. Access removal is tracked to remove access as necessary in a timely manner.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-02",
+        "question-id": "IAM-02.6",
+        "answer": "yes",
+        "comment": "Multifactor authentication (MFA) is required for all users, with additional MFA challenges required for privileged access.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-02",
+        "question-id": "IAM-02.7",
+        "answer": "no",
+        "comment": "Elastic provides this information to our external auditor as a part of our compliance certifications. Please see our SOC 2 Type 2 for additional information.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-03",
+        "question-id": "IAM-03.1",
+        "answer": "yes",
+        "comment": "VPN and MFA is required to access the production network for all Elastic users for authorized business purposes.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-04",
+        "question-id": "IAM-04.1",
+        "answer": "yes",
+        "comment": "We manage and store the identity of all personnel who have network access including their level of access. Access requires a documented access request and functional leader approval prior to access being provisioned. \n\nAll internal users connecting to the network must have a unique username and password. Privileged access to production systems and supporting tools is only allowed through a VPN protected with MFA. VPN accounts provide access to internal systems based on a role-based system. Internal users are provisioned based on a defined user access management process based on Role Based Access Control following the principle of least privilege.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-04",
+        "question-id": "IAM-04.2",
+        "answer": "yes",
+        "comment": "We manage and store the identity of all personnel who have network access including their level of access. Access requires a documented access request and functional leader approval prior to access being provisioned. \n\n\nAll internal users connecting to the network must have a unique username and password. Privileged access to production systems and supporting tools is only allowed through a VPN protected with MFA. VPN accounts provide access to internal systems based on a role-based system. Users are provisioned based on a defined user access management process.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-05",
+        "question-id": "IAM-05.1",
+        "answer": "no",
+        "comment": "Upon request, Elastic will provide proof of controls around segregation of duties, but we do not share our internal policies with customers.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-06",
+        "question-id": "IAM-06.1",
+        "answer": "yes",
+        "comment": "Access controls, including multifactor authentication (MFA)  are in place to prevent unauthorized access to non-public source code.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-06",
+        "question-id": "IAM-06.2",
+        "answer": "NA",
+        "comment": "This is not applicable in a SAAS environment, we do not host tenant application, program or object source code.\n\nAccess controls, including multifactor authentication (MFA)  are in place at multiple levels in the application and underlying platform to prevent any unauthorized access to tenant data.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-07",
+        "question-id": "IAM-07.1",
+        "answer": "yes",
+        "comment": "Third-party unauthorized access is included in our risk assessments.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-07",
+        "question-id": "IAM-07.2",
+        "answer": "yes",
+        "comment": "Access controls, including multifactor authentication (MFA)  are in place at multiple levels in the application and underlying platform to prevent any unauthorized access to any part of the system.\n\nAll access to the production environment is logged, monitored and audited at multiple levels. Access to tenant data is logged at a granular level, down to individual operating system commands or API calls that are attributable to an individual. Automatic alerting is in place, with documented response procedures for the InfoSec team to act on alerts.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-08",
+        "question-id": "IAM-08.1",
+        "answer": "yes",
+        "comment": "All internal users connecting to the network must have a unique username and password. Privileged access to production systems and supporting tools is only allowed through a VPN protected with MFA. VPN accounts provide access to internal systems based on a role-based system. Internal users are provisioned based on a defined user access management process based on Role Based Access Control following the principle of least privilege. Provisioning/deprovisioning of identites and privileges are supported by automation.\n\nAll access to the production environment is logged, monitored and audited at multiple levels. Access to tenant data is logged at a granular level, down to individual operating system commands or API calls that are attributable to an individual. Automatic alerting is in place, with documented response procedures for the InfoSec team to act on alerts.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-08",
+        "question-id": "IAM-08.2",
+        "answer": "yes",
+        "comment": "Identities used for authentication must be stored in our central Identity Provider.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-08",
+        "question-id": "IAM-08.3",
+        "answer": "yes",
+        "comment": "Replication and federation are managed to ensure that replication only occurs when business necessary.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-09",
+        "question-id": "IAM-09.1",
+        "answer": "yes",
+        "comment": "Access to in-scope system components is determined by role and based on least privilege. Provisioning/De-provisioning occurs based on formal start, end and transfer dates, as governed by HR in the Human Resources Information System (HRIS).",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-09",
+        "question-id": "IAM-09.2",
+        "answer": "yes",
+        "comment": "Elastic will respond to data subject access requests according to applicable regulations.\n\nhttps://www.elastic.co/legal/privacy-statement",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-10",
+        "question-id": "IAM-10.1",
+        "answer": "yes",
+        "comment": "Entitlements for all system users and administrators are performed quarterly. \n\nUser access reviews are performed by functional leaders for the in-scope system components to ensure that access is appropriate.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-10",
+        "question-id": "IAM-10.2",
+        "answer": "yes",
+        "comment": "Evidence of quarterly user access reviews is recorded.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-10",
+        "question-id": "IAM-10.3",
+        "answer": "yes",
+        "comment": "Remediation of over-provisioned accounts and access is tracked.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-10",
+        "question-id": "IAM-10.4",
+        "answer": "yes",
+        "comment": "All access to the production environment is logged, monitored and audited at multiple levels. Access to tenant data is logged at a granular level, down to individual operating system commands or API calls that are attributable to an individual. Automatic alerting is in place, with documented response procedures for the InfoSec team to act on alerts.\n\nElastic's Security Incident Management Standard defines requirements for notifying customers in the event of a security incident based on regulatory requirements including privacy, and contractual requirements.  Elastic's security incident response plan includes steps for evaluating whether customers should be notified.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-11",
+        "question-id": "IAM-11.1",
+        "answer": "yes",
+        "comment": "Deprovisioning, revocation, or modification of user access is completed within 24 hours of the user leaving the company/ moving roles internally.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-11",
+        "question-id": "IAM-11.2",
+        "answer": "yes",
+        "comment": "These are included in our user access processes for role changes and terminations.\n\nDeprovisioning, revocation, or modification of user access is completed within 24 hours of the user leaving the company/ moving roles internally.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.1",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can configure integration with their Identity Provider or SSO solution using SAML, Open ID Connect or LDAP.\n\nThese can be configured on a per-deployment basis at the customer's discretion and without any involvement from Elastic.\n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.10",
+        "answer": "yes",
+        "comment": "Elastic Cloud allows administrative user / operators to define their password during registration.\n\nFor end users who use Kibana, we do not support a change at first-logon, but recommend using SSO with their own identity provider (IdP) using SAML, OpenID connect or LDAP. \n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.11",
+        "answer": "yes",
+        "comment": "An email-based self-service password reset functionality is in place.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.2",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can configure integration with their Identity Provider or SSO solution using SAML, Open ID Connect or LDAP.\n\nThese can be configured on a per-deployment basis at the customer's discretion and without any involvement from Elastic.\n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.3",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can configure integration with their Identity Provider or SSO solution using SAML, Open ID Connect or LDAP.\n\nThese can be configured on a per-deployment basis at the customer's discretion and without any involvement from Elastic.\n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.4",
+        "answer": "no",
+        "comment": "We do not offer this natively, but customers who have this capability within their identity provider (IdP) or single sign on (SSO) solution can utilize their existing capability by integrating their Elastic Cloud deployments with their IdP using SAML.\n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.5",
+        "answer": "yes",
+        "comment": "Granular role based access control is available in Elasticsearch and Kibana, including the capability to defined custom roles.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.6",
+        "answer": "yes",
+        "comment": "Elastic Cloud console allows optional Multi-factor Authentication (MFA).\n\nMFA for Elastic Cloud deployments is best achieved by federating with their Identity Provider or SSO solution using SAML, Open ID Connect or LDAP.\n\nThese can be configured on a per-deployment basis at the customer's discretion and without any involvement from Elastic.\n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html\n\n",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.7",
+        "answer": "yes",
+        "comment": "Customers may use third-party identity assurance services including Microsoft and Google \"social sign-on\".",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.8",
+        "answer": "yes",
+        "comment": "Our password requirements, including complexity and expiry, are based on the latest guidance in NIST SP 800-63.\n\nCustomers can achieve a custom password policy by integrating deployments with their own identity provider (IdP) using SAML, OpenID connect or LDAP. \n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-12",
+        "question-id": "IAM-12.9",
+        "answer": "yes",
+        "comment": "Customers can achieve a custom password policy by integrating deployments with their own identity provider (IdP) using SAML, OpenID connect or LDAP. \n\nFor more information see: https://www.elastic.co/guide/en/cloud/current/ec-security.html",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IAM-13",
+        "question-id": "IAM-13.1",
+        "answer": "yes",
+        "comment": "All access to the production environment is logged, monitored and audited. Direct access to virtual machines (e.g. by SSH) is blocked and can only be performed via an access broker that enforces role based access control and full session logging.\n\nAlerting is in place for use of potentially sensitive commands, with documented response procedures for the InfoSec team to act on alerts.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Identity & Access Mgmt",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-01",
+        "question-id": "IPY-01.1",
+        "answer": "yes",
+        "comment": "The Elastic Cloud API enables customers to perform most of the operations available in the UI console (i.e. creating and managing Elastic Cloud deployments) through API calls. \n\nDocumentation can be found here: https://www.elastic.co/guide/en/cloud/current/ec-restful-api.html\n\nElasticsearch itself exposes REST APIs that are used by the UI components and can be called directly to configure and access Elasticsearch features or to ingest and search data:\n\nDocumentation can be found here: https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html\n\n",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-02",
+        "question-id": "IPY-02.1",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can extract and download data in a number of formats, including CSV and PDF via the UI, or JSON via the Elasticsearch APIs. This can be done at any time and without Elastic involvement.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-03",
+        "question-id": "IPY-03.1",
+        "answer": "yes",
+        "comment": "Service Level Agreements, where provided, would include the use and availability of APIs.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-03",
+        "question-id": "IPY-03.2",
+        "answer": "NA",
+        "comment": "Not applicable to a SaaS offering.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-03",
+        "question-id": "IPY-03.3",
+        "answer": "yes",
+        "comment": "Elastic Cloud customers can extract and download data in a number of formats, including CSV and PDF via the UI, or JSON via the Elasticsearch APIs. This can be done at any time and without Elastic involvement.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-04",
+        "question-id": "IPY-04.1",
+        "answer": "yes",
+        "comment": "Data in transit to, from and within the Elastic Cloud environment is encrypted using the open encryption standard TLS 1.2 with strong ciphers. TLS versions older than 1.2 are disabled.",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-04",
+        "question-id": "IPY-04.2",
+        "answer": "yes",
+        "comment": "Data in transit to, from and within the Elastic Cloud environment is encrypted using the open encryption standard TLS 1.2 with strong ciphers. TLS versions older than 1.2 are disabled.\n\nThe underlying network protocol is HTTP, with industry standard REST APIs. Documentation describing specific API endpoints and HTTP requests that can be made to those endpoints is available at: https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-05",
+        "question-id": "IPY-05.1",
+        "answer": "yes",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. Elastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-05",
+        "question-id": "IPY-05.2",
+        "answer": "yes",
+        "comment": "Not applicable to a SaaS offering in the context of virtual machine images. We do provide the equivalent functionality with regards to Elastic Cloud deployments.\n\nCustomers are provided with functionality to store backup snapshots in a repository of their choosing:\n\nhttps://www.elastic.co/guide/en/cloud/current/ec-custom-repository.html",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "IPY-05",
+        "question-id": "IPY-05.3",
+        "answer": "NA",
+        "comment": "Elastic utilizes Infrastructure as a Service providers (IaaS) and does not maintain its own data centers. Elastic Cloud customers have the flexibility to choose the underlying IaaS provider and geographical region for their data on a per-deployment basis.\n\nPhysical Security, media and hardware controls are the responsibility of the IaaS provider, more details on the controls they have in place can be found at:\n\nFor AWS, see https://aws.amazon.com/compliance/programs/ \nFor GCP, see https://cloud.google.com/security/compliance/#/ \nFor Azure, see https://docs.microsoft.com/en-us/azure/compliance/",
+        "infosec-function": "Product Security",
+        "infosec-service": "Svc: Product Security",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

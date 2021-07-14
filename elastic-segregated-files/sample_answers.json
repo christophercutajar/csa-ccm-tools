@@ -1,0 +1,47 @@
+{
+   "ccm": {
+      "metadata": {
+         "version": "3.1",
+         "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+         "source-file": "official-caiq--cloud.xlsx"
+      },
+      "answers": [
+         {
+            "control-id": "AAC-01",
+            "question-id": "AAC-01.1",
+            "answer": "yes",
+            "comment": "Annual security reviews/ audits are performed by independent third parties.\n\nElastic has completed the SOC 2 Type 2 certification, including the security control requirements defined by the Cloud Security Alliance (CSA), HIPAA Attestation of Compliance, and ISO 27001 27017 and 27018 certifications for Elastic Cloud.\n\nAn up to date list of our certifications and attestations is available at https://www.elastic.co/security-and-compliance. \n\nOur code is free and open and frequently reviewed by members of the open source community. We also run a bug bounty program that rewards independent researchers who identify vulnerabilities in our products.",
+            "infosec-function": "Security Assurance",
+            "infosec-service": "Svc: Customer Assurance",
+            "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+         },
+         {
+            "control-id": "AAC-01",
+            "question-id": "AAC-01.2",
+            "answer": "yes",
+            "comment": "Our audit program and certifications take into account the effectiveness of security operations and progress against security objectives.",
+            "infosec-function": "Security Assurance",
+            "infosec-service": "Svc: Customer Assurance",
+            "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+         },
+         {
+            "control-id": "AAC-02",
+            "question-id": "AAC-02.1",
+            "answer": "yes",
+            "comment": "We are happy to share our current SOC 2 Type 2 report, which includes the CSA STAR CCM criteria, upon request.\n\nOur ISO certificates can be found on our public site at: https://www.elastic.co/security-and-compliance\n\nWe authorized as FedRAMP Moderate and listed on the FedRAMP Marketplace: https://marketplace.fedramp.gov/#!/product/elastic-cloud?sort=productName&productNameSearch=elastic",
+            "infosec-function": "Security Assurance",
+            "infosec-service": "Svc: Customer Assurance",
+            "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+         },
+         {
+            "control-id": "AAC-02",
+            "question-id": "AAC-02.2",
+            "answer": "yes",
+            "comment": "Elastic performs penetration testing on an annual basis. Both Network and Application Security controls are tested.",
+            "infosec-function": "Security Assurance",
+            "infosec-service": "Svc: Customer Assurance",
+            "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+         }
+      ]
+   }
+}

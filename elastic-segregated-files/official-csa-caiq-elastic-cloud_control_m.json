@@ -1,0 +1,273 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-csa-caiq-elastic-cloud.xlsx"
+    },
+    "control-domains": [
+      {
+        "id": "MOS",
+        "title": "Mobile Security",
+        "controls": [
+          {
+            "id": "MOS-01",
+            "title": "Anti-Malware",
+            "specification": "Anti-malware awareness training, specific to mobile devices, shall be included in the provider's information security awareness training.",
+            "questions": [
+              {
+                "id": "MOS-01.1",
+                "content": "Do you provide anti-malware training specific to mobile devices as part of your information security awareness training?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-02",
+            "title": "Application Stores",
+            "specification": "A documented list of approved application stores has been communicated as acceptable for mobile devices accessing or storing provider managed data.",
+            "questions": [
+              {
+                "id": "MOS-02.1",
+                "content": "Do you document and make available lists of approved application stores for mobile devices accessing or storing company data and/or company systems?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-03",
+            "title": "Approved Applications",
+            "specification": "The company shall have a documented policy prohibiting the installation of non-approved applications or approved applications not obtained through a pre-identified application store.",
+            "questions": [
+              {
+                "id": "MOS-03.1",
+                "content": "Do you have a policy enforcement capability (e.g., XACML) to ensure that only approved applications and those from approved application stores can be loaded onto a mobile device?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-04",
+            "title": "Approved Software for BYOD",
+            "specification": "The BYOD policy and supporting awareness training clearly states the approved applications, application stores, and application extensions and plugins that may be used for BYOD usage.",
+            "questions": [
+              {
+                "id": "MOS-04.1",
+                "content": "Does your BYOD policy and training clearly state which applications and applications stores are approved for use on BYOD devices?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-05",
+            "title": "Awareness and Training",
+            "specification": "The provider shall have a documented mobile device policy that includes a documented definition for mobile devices and the acceptable usage and requirements for all mobile devices. The provider shall post and communicate the policy and requirements through the company's security awareness and training program.",
+            "questions": [
+              {
+                "id": "MOS-05.1",
+                "content": "Do you have a documented mobile device policy in your employee training that clearly defines mobile devices and the accepted usage and requirements for mobile devices?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-06",
+            "title": "Cloud Based Services",
+            "specification": "All cloud-based services used by the company's mobile devices or BYOD shall be pre-approved for usage and the storage of company business data.",
+            "questions": [
+              {
+                "id": "MOS-06.1",
+                "content": "Do you have a documented list of pre-approved cloud based services that are allowed to be used for use and storage of company business data via a mobile device?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-07",
+            "title": "Compatibility",
+            "specification": "The company shall have a documented application validation process to test for mobile device, operating system, and application compatibility issues.",
+            "questions": [
+              {
+                "id": "MOS-07.1",
+                "content": "Do you have a documented application validation process for testing device, operating system, and application compatibility issues?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-08",
+            "title": "Device Eligibility",
+            "specification": "The BYOD policy shall define the device and eligibility requirements to allow for BYOD usage.",
+            "questions": [
+              {
+                "id": "MOS-08.1",
+                "content": "Do you have a BYOD policy that defines the device(s) and eligibility requirements allowed for BYOD usage?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-09",
+            "title": "Device Inventory",
+            "specification": "An inventory of all mobile devices used to store and access company data shall be kept and maintained. All changes to the status of these devices, (i.e., operating system and patch levels, lost or decommissioned status, and to whom the device is assigned or approved for usage (BYOD)), will be included for each device in the inventory.",
+            "questions": [
+              {
+                "id": "MOS-09.1",
+                "content": "Do you maintain an inventory of all mobile devices storing and accessing company data which includes device status (e.g., operating system and patch levels, lost or decommissioned, device assignee)?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-10",
+            "title": "Device Management",
+            "specification": "A centralized, mobile device management solution shall be deployed to all mobile devices permitted to store, transmit, or process customer data.",
+            "questions": [
+              {
+                "id": "MOS-10.1",
+                "content": "Do you have a centralized mobile device management solution deployed to all mobile devices that are permitted to store, transmit, or process company data?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-11",
+            "title": "Encryption",
+            "specification": "The mobile device policy shall require the use of encryption either for the entire device or for data identified as sensitive on all mobile devices and shall be enforced through technology controls.",
+            "questions": [
+              {
+                "id": "MOS-11.1",
+                "content": "Does your mobile device policy require the use of encryption for either the entire device or for data identified as sensitive enforceable through technology controls for all mobile devices?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-12",
+            "title": "Jailbreaking and Rooting",
+            "specification": "The mobile device policy shall prohibit the circumvention of built-in security controls on mobile devices (e.g., jailbreaking or rooting) and is enforced through detective and preventative controls on the device or through a centralized device management system (e.g., mobile device management).",
+            "questions": [
+              {
+                "id": "MOS-12.1",
+                "content": "Does your mobile device policy prohibit the circumvention of built-in security controls on mobile devices (e.g., jailbreaking or rooting)?"
+              },
+              {
+                "id": "MOS-12.2",
+                "content": "Do you have detective and preventative controls on the device or via a centralized device management system which prohibit the circumvention of built-in security controls?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-13",
+            "title": "Legal",
+            "specification": "The BYOD policy includes clarifying language for the expectation of privacy, requirements for litigation, e-discovery, and legal holds. The BYOD policy shall clearly state the expectations over the loss of non-company data in the case that a wipe of the device is required.",
+            "questions": [
+              {
+                "id": "MOS-13.1",
+                "content": "Does your BYOD policy clearly define the expectation of privacy, requirements for litigation, e-discovery, and legal holds?"
+              },
+              {
+                "id": "MOS-13.2",
+                "content": "Does the BYOD policy clearly state the expectations over the loss of non-company data in case a wipe of the device is required?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-14",
+            "title": "Lockout Screen",
+            "specification": "BYOD and/or company owned devices are configured to require an automatic lockout screen, and the requirement shall be enforced through technical controls.",
+            "questions": [
+              {
+                "id": "MOS-14.1",
+                "content": "Do you require and enforce via technical controls an automatic lockout screen for BYOD and company owned devices?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-15",
+            "title": "Operating Systems",
+            "specification": "Changes to mobile device operating systems, patch levels, and/or applications shall be managed through the company's change management processes.",
+            "questions": [
+              {
+                "id": "MOS-15.1",
+                "content": "Do you manage all changes to mobile device operating systems, patch levels, and applications via your company's change management processes?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-16",
+            "title": "Passwords",
+            "specification": "Password policies, applicable to mobile devices, shall be documented and enforced through technical controls on all company devices or devices approved for BYOD usage, and shall prohibit the changing of password/PIN lengths and authentication requirements.",
+            "questions": [
+              {
+                "id": "MOS-16.1",
+                "content": "Do you have password policies for enterprise issued mobile devices and/or BYOD mobile devices?"
+              },
+              {
+                "id": "MOS-16.2",
+                "content": "Are your password policies enforced through technical controls (i.e. MDM)?"
+              },
+              {
+                "id": "MOS-16.3",
+                "content": "Do your password policies prohibit the changing of authentication requirements (i.e. password/PIN length) via a mobile device?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-17",
+            "title": "Policy",
+            "specification": "The mobile device policy shall require the BYOD user to perform backups of data, prohibit the usage of unapproved application stores, and require the use of anti-malware software (where supported).",
+            "questions": [
+              {
+                "id": "MOS-17.1",
+                "content": "Do you have a policy that requires BYOD users to perform backups of specified corporate data?"
+              },
+              {
+                "id": "MOS-17.2",
+                "content": "Do you have a policy that requires BYOD users to prohibit the usage of unapproved application stores?"
+              },
+              {
+                "id": "MOS-17.3",
+                "content": "Do you have a policy that requires BYOD users to use anti-malware software (where supported)?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-18",
+            "title": "Remote Wipe",
+            "specification": "All mobile devices permitted for use through the company BYOD program or a company-assigned mobile device shall allow for remote wipe by the company's corporate IT or shall have all company-provided data wiped by the company's corporate IT.",
+            "questions": [
+              {
+                "id": "MOS-18.1",
+                "content": "Does your IT provide remote wipe or corporate data wipe for all company-accepted BYOD devices?"
+              },
+              {
+                "id": "MOS-18.2",
+                "content": "Does your IT provide remote wipe or corporate data wipe for all company-assigned mobile devices?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-19",
+            "title": "Security Patches",
+            "specification": "Mobile devices connecting to corporate networks or storing and accessing company information shall allow for remote software version/patch validation. All mobile devices shall have the latest available security-related patches installed upon general release by the device manufacturer or carrier and authorized IT personnel shall be able to perform these updates remotely.",
+            "questions": [
+              {
+                "id": "MOS-19.1",
+                "content": "Do your mobile devices have the latest available security-related patches installed upon general release by the device manufacturer or carrier?"
+              },
+              {
+                "id": "MOS-19.2",
+                "content": "Do your mobile devices allow for remote validation to download the latest security patches by company IT personnel?"
+              }
+            ]
+          },
+          {
+            "id": "MOS-20",
+            "title": "Users",
+            "specification": "The BYOD policy shall clarify the systems and servers allowed for use or access on a BYOD-enabled device.",
+            "questions": [
+              {
+                "id": "MOS-20.1",
+                "content": "Does your BYOD policy clarify the systems and servers allowed for use or access on the BYOD-enabled device?"
+              },
+              {
+                "id": "MOS-20.2",
+                "content": "Does your BYOD policy specify the user roles that are allowed access via a BYOD-enabled device?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

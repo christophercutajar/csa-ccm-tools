@@ -1,0 +1,272 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "MOS-01",
+        "question-id": "MOS-01.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-02",
+        "question-id": "MOS-02.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-03",
+        "question-id": "MOS-03.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-04",
+        "question-id": "MOS-04.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-05",
+        "question-id": "MOS-05.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-06",
+        "question-id": "MOS-06.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-07",
+        "question-id": "MOS-07.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-08",
+        "question-id": "MOS-08.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-09",
+        "question-id": "MOS-09.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-10",
+        "question-id": "MOS-10.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-11",
+        "question-id": "MOS-11.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-12",
+        "question-id": "MOS-12.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-12",
+        "question-id": "MOS-12.2",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-13",
+        "question-id": "MOS-13.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-13",
+        "question-id": "MOS-13.2",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-14",
+        "question-id": "MOS-14.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-15",
+        "question-id": "MOS-15.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-16",
+        "question-id": "MOS-16.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-16",
+        "question-id": "MOS-16.2",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-16",
+        "question-id": "MOS-16.3",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-17",
+        "question-id": "MOS-17.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-17",
+        "question-id": "MOS-17.2",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-17",
+        "question-id": "MOS-17.3",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-18",
+        "question-id": "MOS-18.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-18",
+        "question-id": "MOS-18.2",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-19",
+        "question-id": "MOS-19.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-19",
+        "question-id": "MOS-19.2",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-20",
+        "question-id": "MOS-20.1",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "MOS-20",
+        "question-id": "MOS-20.2",
+        "answer": "NA",
+        "comment": "Elastic's policy is that no customer data is to be stored on mobile devices.\n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services. Elastic personnel are technically restricted from using mobile devices to connect to the Elastic Cloud VPN.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Security Assurance",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

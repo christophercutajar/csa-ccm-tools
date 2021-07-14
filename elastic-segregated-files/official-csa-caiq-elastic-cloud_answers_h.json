@@ -1,0 +1,218 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-caiq-elastic-cloud.xlsx"
+    },
+    "answers": [
+      {
+        "control-id": "HRS-01",
+        "question-id": "HRS-01.1",
+        "answer": "yes",
+        "comment": "Formal procedures are documented in Elastic's Access Control Standard for revocation of access and return of assets.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-01",
+        "question-id": "HRS-01.2",
+        "answer": "yes",
+        "comment": "Formal procedures are documented in Elastic's Access Control Standard for revocation of access and return of assets.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-02",
+        "question-id": "HRS-02.1",
+        "answer": "yes",
+        "comment": "All new employees are subject to background checks pursuant to local laws, regulations, ethics, and contractual constraints.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-03",
+        "question-id": "HRS-03.1",
+        "answer": "yes",
+        "comment": "Security and privacy awareness training is completed during new hire onboarding activities and then annually after initial hire.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-03",
+        "question-id": "HRS-03.2",
+        "answer": "yes",
+        "comment": "Security and privacy training in completed during new hire onboarding activities and then annually after initial hire. A record is kept for all training completed via the online Learning Management where the training is hosted.\n\nOn the first week of employment, employees are assigned security training and are provided with access according to their role within Elastic. The process is formalized and uses a detailed access checklist including all critical systems.\n\nEmployees are required to sign a confidentiality agreement upon hire. This agreement prohibits any disclosures of information and other data to which the employee has been granted access.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-04",
+        "question-id": "HRS-04.1",
+        "answer": "yes",
+        "comment": "Documented policies, procedures, and guidelines are in place to govern change in employment and/or termination for employees.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-04",
+        "question-id": "HRS-04.2",
+        "answer": "yes",
+        "comment": "Formal procedures are documented in Elastic's Access Control Standard for revocation of access and return of assets.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-05",
+        "question-id": "HRS-05.1",
+        "answer": "yes",
+        "comment": "We have policies in place prohibiting users from accessing customer information via their personal or mobile devices. \n\nCustomer data is considered Restricted Information, which means it must only be accessed using Elastic approved devices.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-06",
+        "question-id": "HRS-06.1",
+        "answer": "yes",
+        "comment": "These are reviewed regularly by Legal.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-07",
+        "question-id": "HRS-07.1",
+        "answer": "yes",
+        "comment": "These are included in terms and conditions, including contract terms. A customer responsibility matrix will be made available in the future.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-08",
+        "question-id": "HRS-08.1",
+        "answer": "yes",
+        "comment": "Elastic's policy is that no customer data or Elastic Restricted data is to be stored or processed on personal devices. \n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-08",
+        "question-id": "HRS-08.2",
+        "answer": "yes",
+        "comment": "Elastic's policy is that no customer data or Elastic Restricted data is to be stored or processed on personal devices. \n\nMobile devices are not used in the Elastic Cloud environment or delivery of Elastic Cloud Services.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-09",
+        "question-id": "HRS-09.1",
+        "answer": "yes",
+        "comment": "Security and privacy awareness training is completed during new hire onboarding activities and then annually after initial hire. General overview training is combined with specific role-based material appropriate to the audience.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-09",
+        "question-id": "HRS-09.2",
+        "answer": "yes",
+        "comment": "Security and privacy awareness training is completed during new hire onboarding activities and then annually after initial hire.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-09",
+        "question-id": "HRS-09.3",
+        "answer": "yes",
+        "comment": "Security and privacy training in completed during new hire onboarding activities and then annually after initial hire. A record is kept for all training completed via the online Learning Management where the training is hosted.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-09",
+        "question-id": "HRS-09.4",
+        "answer": "no",
+        "comment": "On the first week of employment, employees are assigned security training and are provided with access according to their role within Elastic. The process is formalized and uses a detailed access checklist including all critical systems. Failure to complete training on time results in escalation through management.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-09",
+        "question-id": "HRS-09.5",
+        "answer": "yes",
+        "comment": "Security and privacy awareness training is completed during new hire onboarding activities and then annually after initial hire.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-09",
+        "question-id": "HRS-09.6",
+        "answer": "yes",
+        "comment": "All administrators are educated on their legal responsibilities with regard to security and data integrity. Security and privacy awareness training is completed during new hire onboarding activities and then annually after initial hire. They also are required to follow the requirements outlined in the InfoSec009 Data Classification Standard. This data classification standard enables Elastic to categorize the information that it processes for efficient use and protection. By identifying the at types of data that Elastic processes, how and by whom the data is used and where the data is stored, Elastic can better develop policies and procedures to prevent the misuse of sensitive information.\nElastic users are required to use the standard to classify the data they handle, process, and store to ensure Elastic implements adequate security measures to protect the confidentiality, integrity, and availability of the data.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-10",
+        "question-id": "HRS-10.1",
+        "answer": "yes",
+        "comment": "The company requires all new hires to acknowledge that they have read and agree to adhering to the information security policy within our onboarding system.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-10",
+        "question-id": "HRS-10.2",
+        "answer": "yes",
+        "comment": "Employees must acknowledge the Employee Handbook, which describes the responsibilities and expected behavior with regard to data and information system usage, upon hire. This includes their responsibilities for maintaining a safe and secure working environment. All Elastic personnel are required to sign Confidentiality Agreements to protect customer information, as a condition of employment.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-10",
+        "question-id": "HRS-10.3",
+        "answer": "yes",
+        "comment": "Users are made aware of their responsibilities for securing any unattended equipment.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-11",
+        "question-id": "HRS-11.1",
+        "answer": "yes",
+        "comment": "Computers and laptops enforce a password protected screensaver after apre-defined time.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      },
+      {
+        "control-id": "HRS-11",
+        "question-id": "HRS-11.2",
+        "answer": "yes",
+        "comment": "Users are made aware of their responsibilities for securing any unattended equipment and not leaving openly visible work on screen.",
+        "infosec-function": "Security Assurance",
+        "infosec-service": "Svc: Awareness & Training",
+        "infosec-last-review-date": "2021-06-30T00:00:00+00:00"
+      }
+    ]
+  }
+}

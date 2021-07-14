@@ -1,0 +1,268 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-csa-caiq-elastic-cloud.xlsx"
+    },
+    "control-domains": [
+      {
+        "id": "IAM",
+        "title": "Identity & Access Management",
+        "controls": [
+          {
+            "id": "IAM-01",
+            "title": "Audit Tools Access",
+            "specification": "Access to, and use of, audit tools that interact with the organization's information systems shall be appropriately segmented and restricted to prevent compromise and misuse of log data.",
+            "questions": [
+              {
+                "id": "IAM-01.1",
+                "content": "Do you restrict, log, and monitor access to your information security management systems (e.g., hypervisors, firewalls, vulnerability scanners, network sniffers, APIs, etc.)?"
+              },
+              {
+                "id": "IAM-01.2",
+                "content": "Do you monitor and log privileged access (e.g., administrator level) to information security management systems?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-02",
+            "title": "User Access Policy",
+            "specification": "User access policies and procedures shall be established, and supporting business processes and technical measures implemented, for ensuring appropriate identity, entitlement, and access management for all internal corporate and customer (tenant) users with access to data and organizationally-owned or managed (physical and virtual) application interfaces and infrastructure network and systems components. These policies, procedures, processes, and measures must incorporate the following:\n • Procedures, supporting roles, and responsibilities for provisioning and de-provisioning user account entitlements following the rule of least privilege based on job function (e.g., internal employee and contingent staff personnel changes, customer-controlled access, suppliers' business relationships, or other third-party business relationships) \n • Business case considerations for higher levels of assurance and multi-factor authentication secrets (e.g., management interfaces, key generation, remote access, segregation of duties, emergency access, large-scale provisioning or geographically-distributed deployments, and personnel redundancy for critical systems)\n • Access segmentation to sessions and data in multi-tenant architectures by any third party (e.g., provider and/or other customer (tenant)\n • Identity trust verification and service-to-service application (API) and information processing interoperability (e.g., SSO and federation)\n • Account credential lifecycle management from instantiation through revocation\n • Account credential and/or identity store minimization or re-use when feasible\n • Authentication, authorization, and accounting (AAA) rules for access to data and sessions (e.g., encryption and strong/multi-factor, expireable, non-shared authentication secrets)\n • Permissions and supporting capabilities for customer (tenant) controls over authentication, authorization, and accounting (AAA) rules for access to data and sessions\n • Adherence to applicable legal, statutory, or regulatory compliance requirements\n\n*Requirements in bullet points 4 to 7 are covered in IAM-12 questions.\n",
+            "questions": [
+              {
+                "id": "IAM-02.1",
+                "content": "Do you have controls in place ensuring timely removal of systems access that is no longer required for business purposes?"
+              },
+              {
+                "id": "IAM-02.2",
+                "content": "Do you have policies, procedures and technical measures in place to ensure appropriate data/assets access management in adherence to legal, statutory or regulatory compliance requirements?"
+              },
+              {
+                "id": "IAM-02.3",
+                "content": "Do you have procedures and technical measures in place for user account entitlement de-/provisioning based on the rule of least privilege?"
+              },
+              {
+                "id": "IAM-02.4",
+                "content": "Do you have procedures and technical measures in place for data access segmentation in multi-tenant system architectures?"
+              },
+              {
+                "id": "IAM-02.5",
+                "content": "Do you enforce data access permissions based on the rules of Authentication, Authorization and Accountability (AAA)?"
+              },
+              {
+                "id": "IAM-02.6",
+                "content": "Do your policies and procedures incorporate security controls for establishing higher levels of assurance for critical business case considerations, supported by multifactor authentication?"
+              },
+              {
+                "id": "IAM-02.7",
+                "content": "Do you provide metrics to track the speed with which you are able to remove systems access that is no longer required for business purposes?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-03",
+            "title": "Diagnostic / Configuration Ports Access",
+            "specification": "User access to diagnostic and configuration ports shall be restricted to authorized individuals and applications.",
+            "questions": [
+              {
+                "id": "IAM-03.1",
+                "content": "Is user access to diagnostic and configuration ports restricted to authorized individuals and applications?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-04",
+            "title": "Policies and Procedures",
+            "specification": "Policies and procedures shall be established to store and manage identity information about every person who accesses IT infrastructure and to determine their level of access. Policies shall also be developed to control access to network resources based on user identity.",
+            "questions": [
+              {
+                "id": "IAM-04.1",
+                "content": "Do you manage and store the identity of all personnel who have access to the IT infrastructure, including their level of access?"
+              },
+              {
+                "id": "IAM-04.2",
+                "content": "Do you manage and store the user identity of all personnel who have network access, including their level of access?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-05",
+            "title": "Segregation of Duties",
+            "specification": "User access policies and procedures shall be established, and supporting business processes and technical measures implemented, for restricting user access as per defined segregation of duties to address business risks associated with a user-role conflict of interest.",
+            "questions": [
+              {
+                "id": "IAM-05.1",
+                "content": "Do you provide tenants with documentation on how you maintain segregation of duties within your cloud service offering?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-06",
+            "title": "Source Code Access Restriction",
+            "specification": "Access to the organization's own developed applications, program, or object source code, or any other form of intellectual property (IP), and use of proprietary software shall be appropriately restricted following the rule of least privilege based on job function as per established user access policies and procedures.",
+            "questions": [
+              {
+                "id": "IAM-06.1",
+                "content": "Are controls in place to prevent unauthorized access to your application, program, or object source code, and assure it is restricted to authorized personnel only?"
+              },
+              {
+                "id": "IAM-06.2",
+                "content": "Are controls in place to prevent unauthorized access to tenant application, program, or object source code, and assure it is restricted to authorized personnel only?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-07",
+            "title": "Third Party Access",
+            "specification": "The identification, assessment, and prioritization of risks posed by business processes requiring third-party access to the organization's information systems and data shall be followed by coordinated application of resources to minimize, monitor, and measure likelihood and impact of unauthorized or inappropriate access. Compensating controls derived from the risk analysis shall be implemented prior to provisioning access.",
+            "questions": [
+              {
+                "id": "IAM-07.1",
+                "content": "Does your organization conduct third-party unauthorized access risk assessments?"
+              },
+              {
+                "id": "IAM-07.2",
+                "content": "Are preventive, detective  corrective compensating controls in place to mitigate impacts of unauthorized or inappropriate access? "
+              }
+            ]
+          },
+          {
+            "id": "IAM-08",
+            "title": "User Access Restriction / Authorization",
+            "specification": "Policies and procedures are established for permissible storage and access of identities used for authentication to ensure identities are only accessible based on rules of least privilege and replication limitation only to users explicitly defined as business necessary.",
+            "questions": [
+              {
+                "id": "IAM-08.1",
+                "content": "Do you document how you grant, approve and enforce access restrictions to tenant/customer credentials following the rules of least privilege?"
+              },
+              {
+                "id": "IAM-08.2",
+                "content": "Based on the rules of least privilege, do you have policies and procedures established for permissible storage and access of identities used for authentication?"
+              },
+              {
+                "id": "IAM-08.3",
+                "content": "Do you limit identities' replication only to users explicitly defined as business necessary?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-09",
+            "title": "User Access Authorization",
+            "specification": "Provisioning user access (e.g., employees, contractors, customers (tenants), business partners and/or supplier relationships) to data and organizationally-owned or managed (physical and virtual) applications, infrastructure systems, and network components shall be authorized by the organization's management prior to access being granted and appropriately restricted as per established policies and procedures. Upon request, provider shall inform customer (tenant) of this user access, especially if customer (tenant) data is used as part of the service and/or customer (tenant) has some shared responsibility over implementation of control.",
+            "questions": [
+              {
+                "id": "IAM-09.1",
+                "content": "Does your management provision the authorization and restrictions for user access (e.g., employees, contractors, customers (tenants), business partners, and/or suppliers) prior to their access to data and any owned or managed (physical and virtual) applications, infrastructure systems, and network components?"
+              },
+              {
+                "id": "IAM-09.2",
+                "content": "Do you provide upon the request of users with legitimate interest access (e.g., employees, contractors, customers (tenants), business partners and/or suppliers) to data and any owned or managed (physical and virtual) applications, infrastructure systems and network components?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-10",
+            "title": "User Access Reviews",
+            "specification": "User access shall be authorized and revalidated for entitlement appropriateness, at planned intervals, by the organization's business leadership or other accountable business role or function supported by evidence to demonstrate the organization is adhering to the rule of least privilege based on job function. For identified access violations, remediation must follow established user access policies and procedures.",
+            "questions": [
+              {
+                "id": "IAM-10.1",
+                "content": "Do you require a periodical authorization and validation (e.g. at least annually) of the entitlements for all system users and administrators (exclusive of users maintained by your tenants), based on the rule of least privilege, by business leadership or other accountable business role or function?"
+              },
+              {
+                "id": "IAM-10.2",
+                "content": "Do you collect evidence to demonstrate that the policy (see question IAM-10.1) has been enforced?"
+              },
+              {
+                "id": "IAM-10.3",
+                "content": "Do you ensure that remediation actions for access violations follow user access policies?\n"
+              },
+              {
+                "id": "IAM-10.4",
+                "content": "Will you share user entitlement and remediation reports with your tenants, if inappropriate access may have been allowed to tenant data?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-11",
+            "title": "User Access Revocation",
+            "specification": "Timely de-provisioning (revocation or modification) of user access to data and organizationally-owned or managed (physical and virtual) applications, infrastructure systems, and network components, shall be implemented as per established policies and procedures and based on user's change in status (e.g., termination of employment or other business relationship, job change, or transfer). Upon request, provider shall inform customer (tenant) of these changes, especially if customer (tenant) data is used as part the service and/or customer (tenant) has some shared responsibility over implementation of control.",
+            "questions": [
+              {
+                "id": "IAM-11.1",
+                "content": "Is timely deprovisioning, revocation, or modification of user access to the organizations systems, information assets, and data implemented upon any change in status of employees, contractors, customers, business partners, or involved third parties?"
+              },
+              {
+                "id": "IAM-11.2",
+                "content": "Is any change in user access status intended to include termination of employment, contract or agreement, change of employment or transfer within the organization?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-12",
+            "title": "User ID Credentials",
+            "specification": "Internal corporate or customer (tenant) user account credentials shall be restricted as per the following, ensuring appropriate identity, entitlement, and access management and in accordance with established policies and procedures:\n • Identity trust verification and service-to-service application (API) and information processing interoperability (e.g., SSO and Federation)\n • Account credential lifecycle management from instantiation through revocation\n • Account credential and/or identity store minimization or re-use when feasible\n • Adherence to industry acceptable and/or regulatory compliant authentication, authorization, and accounting (AAA) rules (e.g., strong/multi-factor, expireable, non-shared authentication secrets)",
+            "questions": [
+              {
+                "id": "IAM-12.1",
+                "content": "Do you support use of, or integration with, existing customer-based Single Sign On (SSO) solutions to your service?"
+              },
+              {
+                "id": "IAM-12.2",
+                "content": "Do you use open standards to delegate authentication capabilities to your tenants?"
+              },
+              {
+                "id": "IAM-12.3",
+                "content": "Do you support identity federation standards (e.g., SAML, SPML, WS-Federation, etc.) as a means of authenticating/authorizing users?"
+              },
+              {
+                "id": "IAM-12.4",
+                "content": "Do you have a Policy Enforcement Point capability (e.g., XACML) to enforce regional legal and policy constraints on user access?"
+              },
+              {
+                "id": "IAM-12.5",
+                "content": "Do you have an identity management system (enabling classification of data for a tenant) in place to enable both role-based and context-based entitlement to data?"
+              },
+              {
+                "id": "IAM-12.6",
+                "content": "Do you provide tenants with strong (multifactor) authentication options (e.g., digital certs, tokens, biometrics, etc.) for user access?"
+              },
+              {
+                "id": "IAM-12.7",
+                "content": "Do you allow tenants to use third-party identity assurance services?"
+              },
+              {
+                "id": "IAM-12.8",
+                "content": "Do you support password (e.g., minimum length, age, history, complexity) and account lockout (e.g., lockout threshold, lockout duration) policy enforcement?"
+              },
+              {
+                "id": "IAM-12.9",
+                "content": "Do you allow tenants/customers to define password and account lockout policies for their accounts?"
+              },
+              {
+                "id": "IAM-12.10",
+                "content": "Do you support the ability to force password changes upon first logon?"
+              },
+              {
+                "id": "IAM-12.11",
+                "content": "Do you have mechanisms in place for unlocking accounts that have been locked out (e.g., self-service via email, defined challenge questions, manual unlock)?"
+              }
+            ]
+          },
+          {
+            "id": "IAM-13",
+            "title": "Utility Programs Access",
+            "specification": "Utility programs capable of potentially overriding system, object, network, virtual machine, and application controls shall be restricted.",
+            "questions": [
+              {
+                "id": "IAM-13.1",
+                "content": "Are access to utility programs used to manage virtualized partitions (e.g. shutdown, clone, etc) appropriately restricted and monitored?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

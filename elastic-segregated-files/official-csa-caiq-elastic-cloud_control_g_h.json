@@ -1,0 +1,357 @@
+{
+  "ccm": {
+    "metadata": {
+      "version": "3.1",
+      "title": "CONSENSUS ASSESSMENTS INITIATIVE QUESTIONNAIRE v3.1",
+      "source-file": "official-csa-caiq-elastic-cloud.xlsx"
+    },
+    "control-domains": [
+      {
+        "id": "GRM",
+        "title": "Governance and Risk Management",
+        "controls": [
+          {
+            "id": "GRM-01",
+            "title": "Baseline Requirements",
+            "specification": "Baseline security requirements shall be established for developed or acquired, organizationally-owned or managed, physical or virtual, applications and infrastructure system, and network components that comply with applicable legal, statutory, and regulatory compliance obligations. Deviations from standard baseline configurations must be authorized following change management policies and procedures prior to deployment, provisioning, or use. Compliance with security baseline requirements must be reassessed at least annually unless an alternate frequency has been established and authorized based on business needs.",
+            "questions": [
+              {
+                "id": "GRM-01.1",
+                "content": "Do you have documented information security baselines for every component of your infrastructure (e.g., hypervisors, operating systems, routers, DNS servers, etc.)?"
+              },
+              {
+                "id": "GRM-01.2",
+                "content": "Do you have the capability to continuously monitor and report the compliance of your infrastructure against your information security baselines?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-02",
+            "title": "Risk Assessments",
+            "specification": "Risk assessments associated with data governance requirements shall be conducted at planned intervals and shall consider the following:\n • Awareness of where sensitive data is stored and transmitted across applications, databases, servers, and network infrastructure\n • Compliance with defined retention periods and end-of-life disposal requirements\n • Data classification and protection from unauthorized use, access, loss, destruction, and falsification",
+            "questions": [
+              {
+                "id": "GRM-02.1",
+                "content": "Does your organization's risk assessments take into account awareness of data residency, legal and statutory requirements for retention periods and data protection and classification?"
+              },
+              {
+                "id": "GRM-02.2",
+                "content": "Do you conduct risk assessments associated with data governance requirements at least once a year?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-03",
+            "title": "Management Oversight",
+            "specification": "Managers are responsible for maintaining awareness of, and complying with, security policies, procedures, and standards that are relevant to their area of responsibility.",
+            "questions": [
+              {
+                "id": "GRM-03.1",
+                "content": "Are your technical, business, and executive managers responsible for maintaining awareness of and compliance with security policies, procedures, and standards for both themselves and their employees as they pertain to the manager and employees' area of responsibility?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-04",
+            "title": "Management Program",
+            "specification": "An Information Security Management Program (ISMP) shall be developed, documented, approved, and implemented that includes administrative, technical, and physical safeguards to protect assets and data from loss, misuse, unauthorized access, disclosure, alteration, and destruction. The security program shall include, but not be limited to, the following areas insofar as they relate to the characteristics of the business:\n • Risk management\n • Security policy\n • Organization of information security\n • Asset management\n • Human resources security\n • Physical and environmental security\n • Communications and operations management\n • Access control\n • Information systems acquisition, development, and maintenance",
+            "questions": [
+              {
+                "id": "GRM-04.1",
+                "content": "Do you provide tenants with documentation describing your Information Security Management Program (ISMP)?"
+              },
+              {
+                "id": "GRM-04.2",
+                "content": "Do you review your Information Security Management Program (ISMP) at least once a year?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-05",
+            "title": "Management Support / Involvement",
+            "specification": "Executive and line management shall take formal action to support information security through clearly-documented direction and commitment, and shall ensure the action has been assigned.",
+            "questions": [
+              {
+                "id": "GRM-05.1",
+                "content": "Do executive and line management take formal action to support information security through clearly-documented direction and commitment, and ensure the action has been assigned?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-06",
+            "title": "Policy",
+            "specification": "Information security policies and procedures shall be established and made readily available for review by all impacted personnel and external business relationships. Information security policies must be authorized by the organization's business leadership (or other accountable business role or function) and supported by a strategic business plan and an information security management program inclusive of defined information security roles and responsibilities for business leadership.",
+            "questions": [
+              {
+                "id": "GRM-06.1",
+                "content": "Are your information security policies and procedures made available to all impacted personnel and business partners, authorized by accountable business role/function and supported by the information security management program as per industry best practices (e.g. ISO 27001, SOC 2)?"
+              },
+              {
+                "id": "GRM-06.2",
+                "content": "Are information security policies authorized by the organization's business leadership (or other accountable business role or function) and supported by a strategic business plan and an information security management program inclusive of defined information security roles and responsibilities for business leadership?"
+              },
+              {
+                "id": "GRM-06.3",
+                "content": "Do you have agreements to ensure your providers adhere to your information security and privacy policies?"
+              },
+              {
+                "id": "GRM-06.4",
+                "content": "Can you provide evidence of due diligence mapping of your controls, architecture, and processes to regulations and/or standards?"
+              },
+              {
+                "id": "GRM-06.5",
+                "content": "Do you disclose which controls, standards, certifications, and/or regulations you comply with?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-07",
+            "title": "Policy Enforcement",
+            "specification": "A formal disciplinary or sanction policy shall be established for employees who have violated security policies and procedures. Employees shall be made aware of what action might be taken in the event of a violation, and disciplinary measures must be stated in the policies and procedures.",
+            "questions": [
+              {
+                "id": "GRM-07.1",
+                "content": "Is a formal disciplinary or sanction policy established for employees who have violated security policies and procedures?"
+              },
+              {
+                "id": "GRM-07.2",
+                "content": "Are employees made aware of what actions could be taken in the event of a violation via their policies and procedures?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-08",
+            "title": "Business / Policy Change Impacts",
+            "specification": "Risk assessment results shall include updates to security policies, procedures, standards, and controls to ensure that they remain relevant and effective.",
+            "questions": [
+              {
+                "id": "GRM-08.1",
+                "content": "Do risk assessment results include updates to security policies, procedures, standards, and controls to ensure they remain relevant and effective?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-09",
+            "title": "Policy Reviews",
+            "specification": "The organization's business leadership (or other accountable business role or function) shall review the information security policy at planned intervals or as a result of changes to the organization to ensure its continuing alignment with the security strategy, effectiveness, accuracy, relevance, and applicability to legal, statutory, or regulatory compliance obligations.",
+            "questions": [
+              {
+                "id": "GRM-09.1",
+                "content": "Do you notify your tenants when you make material changes to your information security and/or privacy policies?"
+              },
+              {
+                "id": "GRM-09.2",
+                "content": "Do you perform, at minimum, annual reviews to your privacy and security policies?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-10",
+            "title": "Assessments",
+            "specification": "Aligned with the enterprise-wide framework, formal risk assessments shall be performed at least annually or at planned intervals, (and in conjunction with any changes to information systems) to determine the likelihood and impact of all identified risks using qualitative and quantitative methods. The likelihood and impact associated with inherent and residual risk shall be determined independently, considering all risk categories (e.g., audit results, threat and vulnerability analysis, and regulatory compliance).",
+            "questions": [
+              {
+                "id": "GRM-10.1",
+                "content": "Are formal risk assessments aligned with the enterprise-wide framework and performed at least annually, or at planned intervals, determining the likelihood and impact of all identified risks, using qualitative and quantitative methods?"
+              },
+              {
+                "id": "GRM-10.2",
+                "content": "Is the likelihood and impact associated with inherent and residual risk determined independently, considering all risk categories?"
+              }
+            ]
+          },
+          {
+            "id": "GRM-11",
+            "title": "Program",
+            "specification": "Risks shall be mitigated to an acceptable level. Acceptance levels based on risk criteria shall be established and documented in accordance with reasonable resolution time frames and stakeholder approval.",
+            "questions": [
+              {
+                "id": "GRM-11.1",
+                "content": "Do you have a documented, organization-wide program in place to manage risk?"
+              },
+              {
+                "id": "GRM-11.2",
+                "content": "Do you make available documentation of your organization-wide risk management program?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "HRS",
+        "title": "Human Resources",
+        "controls": [
+          {
+            "id": "HRS-01",
+            "title": "Asset Returns",
+            "specification": "Upon termination of workforce personnel and/or expiration of external business relationships, all organizationally-owned assets shall be returned within an established period.",
+            "questions": [
+              {
+                "id": "HRS-01.1",
+                "content": "Upon termination of contract or business relationship, are employees and business partners adequately informed of their obligations for returning organizationally-owned assets?"
+              },
+              {
+                "id": "HRS-01.2",
+                "content": "Do you have asset return procedures outlining how assets should be returned within an established period?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-02",
+            "title": "Background Screening",
+            "specification": "Pursuant to local laws, regulations, ethics, and contractual constraints, all employment candidates, contractors, and third parties shall be subject to background verification proportional to the data classification to be accessed, the business requirements, and acceptable risk.",
+            "questions": [
+              {
+                "id": "HRS-02.1",
+                "content": "Pursuant to local laws, regulations, ethics, and contractual constraints, are all employment candidates, contractors, and involved third parties subject to background verification?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-03",
+            "title": "Employment Agreements",
+            "specification": "Employment agreements shall incorporate provisions and/or terms for adherence to established information governance and security policies and must be signed by newly hired or on-boarded workforce personnel (e.g., full or part-time employee or contingent staff) prior to granting workforce personnel user access to corporate facilities, resources, and assets.",
+            "questions": [
+              {
+                "id": "HRS-03.1",
+                "content": "Do your employment agreements incorporate provisions and/or terms in adherence to established information governance and security policies?\n\n"
+              },
+              {
+                "id": "HRS-03.2",
+                "content": "Do you require that employment agreements are signed by newly hired or on-boarded workforce personnel prior to granting workforce personnel user access to corporate facilities, resources, and assets? "
+              }
+            ]
+          },
+          {
+            "id": "HRS-04",
+            "title": "Employment Termination",
+            "specification": "Roles and responsibilities for performing employment termination or change in employment procedures shall be assigned, documented, and communicated.",
+            "questions": [
+              {
+                "id": "HRS-04.1",
+                "content": "Are documented policies, procedures, and guidelines in place to govern change in employment and/or termination?"
+              },
+              {
+                "id": "HRS-04.2",
+                "content": "Do the above procedures and guidelines account for timely revocation of access and return of assets?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-05",
+            "title": "Portable / Mobile Devices",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, to manage business risks associated with permitting mobile device access to corporate resources and may require the implementation of higher assurance compensating controls and acceptable-use policies and procedures (e.g., mandated security training, stronger identity, entitlement and access controls, and device monitoring).",
+            "questions": [
+              {
+                "id": "HRS-05.1",
+                "content": "Are policies and procedures established and measures implemented to strictly limit access to your sensitive data and tenant data from portable and mobile devices (e.g., laptops, cell phones, and personal digital assistants (PDAs)), which are generally higher-risk than non-portable devices (e.g., desktop computers at the provider organization’s facilities)?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-06",
+            "title": "Non-Disclosure Agreements",
+            "specification": "Requirements for non-disclosure or confidentiality agreements reflecting the organization's needs for the protection of data and operational details shall be identified, documented, and reviewed at planned intervals.",
+            "questions": [
+              {
+                "id": "HRS-06.1",
+                "content": "Are requirements for non-disclosure or confidentiality agreements reflecting the organization's needs for the protection of data and operational details identified, documented, and reviewed at planned intervals?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-07",
+            "title": "Roles / Responsibilities",
+            "specification": "Roles and responsibilities of contractors, employees, and third-party users shall be documented as they relate to information assets and security.",
+            "questions": [
+              {
+                "id": "HRS-07.1",
+                "content": "Do you provide tenants with a role definition document clarifying your administrative responsibilities versus those of the tenant?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-08",
+            "title": "Acceptable Use",
+            "specification": "Policies and procedures shall be established, and supporting business processes and technical measures implemented, for defining allowances and conditions for permitting usage of organizationally-owned or managed user end-point devices (e.g., issued workstations, laptops, and mobile devices) and IT infrastructure network and systems components. Additionally, defining allowances and conditions to permit usage of personal mobile devices and associated applications with access to corporate resources (i.e., BYOD) shall be considered and incorporated as appropriate.",
+            "questions": [
+              {
+                "id": "HRS-08.1",
+                "content": "Do you have policies and procedures in place to define allowances and conditions for permitting usage of organizationally-owned or managed user end-point devices and IT infrastructure network and systems components? "
+              },
+              {
+                "id": "HRS-08.2",
+                "content": "Do you define allowance and conditions for BYOD devices and its applications to access corporate resources?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-09",
+            "title": "Training / Awareness",
+            "specification": "A security awareness training program shall be established for all contractors, third-party users, and employees of the organization and mandated when appropriate. All individuals with access to organizational data shall receive appropriate awareness training and regular updates in organizational procedures, processes, and policies relating to their professional function relative to the organization.",
+            "questions": [
+              {
+                "id": "HRS-09.1",
+                "content": "Do you provide a formal, role-based, security awareness training program for cloud-related access and data management issues (e.g., multi-tenancy, nationality, cloud delivery model, segregation of duties implications, and conflicts of interest) for all persons with access to tenant data?"
+              },
+              {
+                "id": "HRS-09.2",
+                "content": "Do you specifically train your employees regarding their specific role and the information security controls they must fulfill?"
+              },
+              {
+                "id": "HRS-09.3",
+                "content": "Do you document employee acknowledgment of training they have completed?"
+              },
+              {
+                "id": "HRS-09.4",
+                "content": "Is successful and timed completion of the training program(s) considered a prerequisite for acquiring and maintaining access to sensitive systems?"
+              },
+              {
+                "id": "HRS-09.5",
+                "content": "Are personnel trained and provided with awareness programs at least once a year?"
+              },
+              {
+                "id": "HRS-09.6",
+                "content": "Are administrators and data stewards properly educated on their legal responsibilities with regard to security and data integrity?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-10",
+            "title": "User Responsibility",
+            "specification": "All personnel shall be made aware of their roles and responsibilities for:\n • Maintaining awareness and compliance with established policies and procedures and applicable legal, statutory, or regulatory compliance obligations.\n • Maintaining a safe and secure working environment",
+            "questions": [
+              {
+                "id": "HRS-10.1",
+                "content": "Are personnel informed of their responsibilities for maintaining awareness and compliance with published security policies, procedures, standards, and applicable regulatory requirements?"
+              },
+              {
+                "id": "HRS-10.2",
+                "content": "Are personnel informed of their responsibilities for maintaining a safe and secure working environment?"
+              },
+              {
+                "id": "HRS-10.3",
+                "content": "Are personnel informed of their responsibilities for ensuring that equipment is secured and not left unattended?"
+              }
+            ]
+          },
+          {
+            "id": "HRS-11",
+            "title": "Workspace",
+            "specification": "Policies and procedures shall be established to require that unattended workspaces do not have openly visible (e.g., on a desktop) sensitive documents and user computing sessions had been disabled after an established period of inactivity.",
+            "questions": [
+              {
+                "id": "HRS-11.1",
+                "content": "Are all computers and laptops configured such that there is lockout screen after a pre-defined amount of time?"
+              },
+              {
+                "id": "HRS-11.2",
+                "content": "Are there policies and procedures to ensure that unattended workspaces do not have openly visible (e.g., on a desktop) sensitive documents?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
