@@ -9,6 +9,8 @@ require 'rubyXL/convenience_methods/cell'
 require 'rubyXL/convenience_methods/workbook'
 require 'rubyXL/convenience_methods/worksheet'
 
+require 'elasticsearch'
+
 module Csa::Ccm
 
 class Matrix
@@ -99,8 +101,11 @@ class Matrix
 
   NOTES_COLUMN_NUM = 8 # Column 'I' in 3.0.1
   COLUMN_MARK_SYMBOL = 'x'
+  INFOSEC_FUNCTION_COLUMN_NUM = 9
+  INFOSEC_SERVICE_COLUMN_NUM = 10
+  INFOSEC_LAST_REVIEW_DATE_COLUMN_NUM = 11
 
-  def apply_answers(answers)
+  def apply_answers(answers, skip_elastic_metadata)
 
     unless @version == answers.version
       raise "Matrix & AnswerCollection version mismatch (Matrix: #{matrix.version}, AnswerCollection: #{answers.version})"
@@ -136,6 +141,12 @@ class Matrix
       # puts "Answer is now #{worksheet[row_number][answer_col].raw_value} and #{worksheet[row_number][NOTES_COLUMN_NUM].raw_value}"
       # puts '___________________________'
 
+      #Applying Elastic InfoSec Metadata
+      if skip_elastic_metadata == false
+        worksheet[row_number][INFOSEC_FUNCTION_COLUMN_NUM].change_contents(answer.infosec_function)
+        worksheet[row_number][INFOSEC_SERVICE_COLUMN_NUM].change_contents(answer.infosec_service)
+        worksheet[row_number][INFOSEC_LAST_REVIEW_DATE_COLUMN_NUM].change_contents(answer.infosec_last_review_date)
+      end
     end
 
     self
@@ -223,6 +234,113 @@ class Matrix
     matrix
   end
 
+  def self.from_xlsx2es(input_file)
+    matrix = Matrix.new(
+      workbook: RubyXL::Parser.parse(input_file),
+      source_path: input_file
+    )
+    
+    client = Elasticsearch::Client.new(
+      host: ENV['ZOCALO_URL'],
+      api_key: {
+        id: ENV['ZOCALO_API_ID'], 
+        api_key: ENV['ZOCALO_API_KEY']
+      },
+      port: '443',
+      scheme: 'https'
+    )
+
+    all_rows = matrix.worksheet.sheet_data.rows
+
+    start_row = matrix.get_start_row(matrix.version)
+    max_row_number = all_rows.length - 1
+
+    puts "Started Data Ingestion..."
+
+    # We loop over all Questions
+    (start_row..max_row_number).each do |row_number|
+      # puts "looping row #{row_number}"
+      row = matrix.row(row_number)
+      # Skip row if there is no question-id
+      # puts"row #{row.question_id}"
+      # require 'pry'
+      # binding.pry
+      next if row.question_id.nil?
+
+      domain_id = row.control_domain_id
+      unless domain_id.nil?
+
+        control_domain = matrix.control_domains[domain_id] ||
+                         ControlDomain.new(
+                           id: row.control_domain_id,
+                           title: row.control_domain_title
+                         )
+
+        # Store the Control Domain
+        matrix.control_domains[domain_id] = control_domain
+      end
+
+      control_id = row.control_id
+      unless control_id.nil?
+
+        control_domain = matrix.control_domains[domain_id]
+        control = control_domain.controls[control_id] || Control.new(
+          id: row.control_id,
+          title: row.control_title,
+          specification: row.control_spec
+        )
+
+        # Store the Control
+        control_domain.controls[control_id] = control
+      end
+
+      # Store the Question
+      control.questions[row.question_id] = Question.new(
+        id: row.question_id,
+        content: row.question_content
+      )
+
+      answer = if row.answer_na
+                 'NA'
+               elsif row.answer_no
+                 'no'
+               elsif row.answer_yes
+                 'yes'
+               end
+      
+      matrix.answers << Answer.new(
+        question_id: row.question_id,
+        control_id: control_id,
+        answer: answer,
+        comment: row.comment,
+        infosec_function: row.infosec_function,
+        infosec_service: row.infosec_service,
+        infosec_last_review_date: (row.infosec_last_review_date).to_s
+      )
+
+      index = 'caiq-controls-answers'
+      document_id = row.question_id
+      body = {
+        control_domain_id: row.control_domain_id,
+        control_domain_title: control_domain.title,
+        control_domain_control_id: row.control_id,
+        control_domain_control_title: control.title,
+        control_domain_control_specification: control.specification,
+        control_domain_control_question_id: row.question_id,
+        control_domain_control_question_content: row.question_content,
+        question_answer: answer,
+        question_comment: row.comment,
+        infosec_function: row.infosec_function,
+        infosec_service: row.infosec_service,
+        infosec_last_review_date: (row.infosec_last_review_date).to_s
+      }
+
+      client.index(index: index, id: document_id, body: body)
+    end
+
+    matrix
+  end
+
   def to_control_hash
     {
       'ccm' => {
@@ -240,10 +358,12 @@ class Matrix
     end
   end
 
-  def to_xlsx(filename)
-    worksheet.delete_column(11)
-    worksheet.delete_column(10)
-    worksheet.delete_column(9)
+  def to_xlsx(filename, skip_elastic_metadata)
+    if skip_elastic_metadata == true
+      worksheet.delete_column(11)
+      worksheet.delete_column(10)
+      worksheet.delete_column(9)
+    end
     workbook.write(filename)
   end
 

@@ -79,7 +79,8 @@ module Csa
         desc "generate-with-answers ANSWERS_YAML", "Writing to the CAIQ XSLX template using YAML"
         option :template_path, aliases: :t, type: :string, desc: "Optional input template CAIQ XSLT file. If missed -r will be checked"
         option :caiq_version, aliases: :r, type: :string, default: "3.1", desc: "Optional input template CAIQ XSLT version. If missed -t will be checked"
-        option :output_file, aliases: :o, type: :string, desc: 'Optional output XSLT file. If missed, the input file’s name will be used'
+        option :output_file, aliases: :o, type: :string, desc: 'Optional output XSLT file. If missed, the input file’s name will be used' 
+        option :skip_elastic_metadata, aliases: :s, type: :boolean, default: true, desc: 'Optional to decide whether to include Elastic InfoSec Metadata within the XLSX or not. If missed, InfoSec Metadata will not be included in the final XLSX.'  
 
         def generate_with_answers(answers_yaml_path)
           unless File.exist? answers_yaml_path
@@ -134,8 +135,24 @@ module Csa
           matrix = Matrix.from_xlsx(template_xlsx_path)
           # puts matrix
 
-          matrix.apply_answers(answers)
-          matrix.to_xlsx(output_file)
+          matrix.apply_answers(answers, options[:skip_elastic_metadata])
+          matrix.to_xlsx(output_file, options[:skip_elastic_metadata])
+        end
+
+        desc "caiq2es XLSX_PATH", "Converting a filled CAIQ to YAML and ingesting into ES"
+        option :output_name, aliases: :n, type: :string, desc: "Optional output CAIQ YAML file. If missed, the input file’s name will be used"
+        option :output_path, aliases: :p, type: :string, desc: "Optional output directory for result file. If missed, pwd will be used"
+        option :comment, aliases: :s, type: :boolean, desc: "[true|false] Optional skip comments in result file. if missed, comments are retained"
+
+        def caiq2es(input_xlsx_file)
+          unless input_xlsx_file
+            UI.say("#{input_xlsx_file} file doesn't exists")
+            return
+          end
+
+          Matrix.from_xlsx2es(input_xlsx_file)
+
+          puts "All data ingested!"
         end
       end
     end
