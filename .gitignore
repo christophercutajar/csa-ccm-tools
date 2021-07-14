@@ -9,4 +9,5 @@
 
 # rspec failure tracking
 .rspec_status
-samples/*.xlsx
+spec/.DS_Store
+.DS_Store
