@@ -10,6 +10,7 @@ require 'rubyXL/convenience_methods/workbook'
 require 'rubyXL/convenience_methods/worksheet'
 
 require 'elasticsearch'
+require 'elastic-app-search'
 
 module Csa::Ccm
 
@@ -116,11 +117,13 @@ class Matrix
 
     start_row = get_start_row(@version)
     max_row_number = all_rows.length - 1
+    
 
     (start_row..max_row_number).each do |row_number|
       question_id = worksheet[row_number][2].value
-
+      # puts row_number
       answer = answers[question_id]
+
       next unless answer
 
       # puts '___________________________'
@@ -250,6 +253,11 @@ class Matrix
       scheme: 'https'
     )
 
+    app_search_client = Elastic::AppSearch::Client.new(
+      :api_key => ENV['ZOCALO_APP_SEARCH_PRIVATE_API'], 
+      :api_endpoint => 'https://as-api.zocalo.inf.elasticnet.co/api/as/v1/'
+    )
+
     all_rows = matrix.worksheet.sheet_data.rows
 
     start_row = matrix.get_start_row(matrix.version)
@@ -266,7 +274,7 @@ class Matrix
       # require 'pry'
       # binding.pry
       next if row.question_id.nil?
-
+      
       domain_id = row.control_domain_id
       unless domain_id.nil?
 
@@ -308,34 +316,59 @@ class Matrix
                  'yes'
                end
       
-      matrix.answers << Answer.new(
-        question_id: row.question_id,
-        control_id: control_id,
-        answer: answer,
-        comment: row.comment,
-        infosec_function: row.infosec_function,
-        infosec_service: row.infosec_service,
-        infosec_last_review_date: (row.infosec_last_review_date).to_s
-      )
+      unless row.comment.nill?
+        matrix.answers << Answer.new(
+          question_id: row.question_id,
+          control_id: control_id,
+          answer: answer,
+          comment: row.comment,
+          infosec_function: row.infosec_function,
+          infosec_service: row.infosec_service,
+          infosec_last_review_date: (row.infosec_last_review_date).to_s
+        )
 
-      index = 'caiq-controls-answers'
-      document_id = row.question_id
-      body = {
-        control_domain_id: row.control_domain_id,
-        control_domain_title: control_domain.title,
-        control_domain_control_id: row.control_id,
-        control_domain_control_title: control.title,
-        control_domain_control_specification: control.specification,
-        control_domain_control_question_id: row.question_id,
-        control_domain_control_question_content: row.question_content,
-        question_answer: answer,
-        question_comment: row.comment,
-        infosec_function: row.infosec_function,
-        infosec_service: row.infosec_service,
-        infosec_last_review_date: (row.infosec_last_review_date).to_s
-      }
+        index = 'caiq-controls-answers'
+        document_id = row.question_id
+        body = {
+          control_domain_id: row.control_domain_id,
+          control_domain_title: control_domain.title,
+          control_domain_control_id: row.control_id,
+          control_domain_control_title: control.title,
+          control_domain_control_specification: control.specification,
+          control_domain_control_question_id: row.question_id,
+          control_domain_control_question_content: row.question_content,
+          question_answer: answer,
+          question_comment: row.comment,
+          infosec_function: row.infosec_function,
+          infosec_service: row.infosec_service,
+          infosec_last_review_date: (row.infosec_last_review_date).to_s
+        }
 
-      client.index(index: index, id: document_id, body: body)
+        puts 'Ingesting ' + row.question_id + ' into Elasticsearch' 
+        client.index(index: index, id: document_id, body: body)
+
+        #AppSearch Ingestion
+
+        engine_name = 'caiq-controls-answers'
+        document = {
+          :id => row.question_id,
+          :control_domain_id => row.control_domain_id,
+          :control_domain_title => control_domain.title,
+          :control_domain_control_id => row.control_id,
+          :control_domain_control_title => control.title,
+          :control_domain_control_specification => control.specification,
+          :control_domain_control_question_id => row.question_id,
+          :control_domain_control_question_content => row.question_content,
+          :question_answer => answer,
+          :question_comment => row.comment,
+          :infosec_function => row.infosec_function,
+          :infosec_service => row.infosec_service,
+          :infosec_last_review_date => (row.infosec_last_review_date).to_s
+        }
+
+        puts 'Ingesting ' + row.question_id + ' into AppSearch'
+        app_search_client.index_document(engine_name, document)
+      end
     end
 
     matrix

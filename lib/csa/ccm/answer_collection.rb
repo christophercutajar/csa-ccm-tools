@@ -25,7 +25,7 @@ class AnswerCollection
     answers = ccm['answers'].map { |a| [a['question-id'], Answer.new(a)] }.to_h
     metadata = ccm['metadata']
     version = metadata['version']
-
+    
     self.new(
       answers: answers,
       metadata: metadata,
