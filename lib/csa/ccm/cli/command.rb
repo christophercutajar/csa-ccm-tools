@@ -116,6 +116,7 @@ module Csa
               date_b <=> date_a
             end
 
+            puts 'XLSX resources templates being used:'
             puts input_files
             template_xlsx_path = input_files.first
           end
@@ -137,6 +138,8 @@ module Csa
 
           matrix.apply_answers(answers, options[:skip_elastic_metadata])
           matrix.to_xlsx(output_file, options[:skip_elastic_metadata])
+
+          puts 'XLSX to YAML conversation complete!'
         end
 
         desc "caiq2es XLSX_PATH", "Converting a filled CAIQ to YAML and ingesting into ES"
